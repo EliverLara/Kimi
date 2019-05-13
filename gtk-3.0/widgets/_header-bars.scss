@@ -139,11 +139,11 @@ headerbar {
     }
   }
   %linked-header {
-    border-radius: 23px;
+ // border-radius: 23px;
     border-right-style: none;
     border: none;
     box-shadow: none;
-    margin: 10px 0px;
+    margin: 5px 0px;
     min-height: 20px;
     &:first-child {
     }
@@ -152,7 +152,7 @@ headerbar {
     }
 
     &:only-child {
-      border-radius: 13px;
+      //border-radius: 13px;
       border-style: none;
     }
     transition: all .1s ease-in;
@@ -167,10 +167,8 @@ headerbar {
   }
   .linked > button:checked{
     @extend %linked-header;
-    border-radius: 23px;
-    background: #00e8b7;
-    box-shadow: 0px 2px 4px rgba(177, 177, 177, 0.753);
-    color: rgb(255, 250, 250);
+    //border-radius: 23px;
+    @include button(active-header);
     &:backdrop{
       color: darken(rgb(255, 250, 250), 4%);
       label{
