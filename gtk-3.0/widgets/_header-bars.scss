@@ -162,13 +162,12 @@ headerbar {
   }
   .linked > button:active{
     @extend %linked-header;
-    background: #00e8b7;
-    color: rgb(255, 250, 250);
+    @include button(active-header);
   }
   .linked > button:checked{
     @extend %linked-header;
-    //border-radius: 23px;
     @include button(active-header);
+    border-radius: 4px;
     &:backdrop{
       color: darken(rgb(255, 250, 250), 4%);
       label{
@@ -179,6 +178,18 @@ headerbar {
   .linked > button:hover,
   .linked > button:backdrop { 
     @extend %linked-header; 
+  }
+  .linked:not(.vertical) > entry { 
+    border-color:$borders_color;
+    box-shadow: none;
+    background: lighten($base_color, 3%); 
+    color: $headerbar_fg_color;
+    caret-color: $headerbar_fg_color;
+    border-radius: 15px;
+    *{ color: $headerbar_fg_color; }
+    &:focus {
+      border-color: entry_focus_border();
+    }
   }
   // End reset style
 

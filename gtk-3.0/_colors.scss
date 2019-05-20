@@ -2,13 +2,13 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: if($variant == 'light', #f0f0f0, lighten(#161925, 1%));
+$base_color: if($variant == 'light', #f0f0f0, lighten(#302b44, 1%));
 $text_color: if($variant == 'light', #31363D, #C3C7D1);
-$bg_color: if($variant == 'light',  #f0f4f7, #161925);
+$bg_color: if($variant == 'light',  #f0f4f7, #302b44);
 $fg_color: if($variant == 'light', #31363d, #C3C7D1);
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
-$_sidebar_color: if($variant == 'light', #393451, #161925);
+$_sidebar_color: #393451;
 
 // Primary colors
 $lime: #85e9ad;
@@ -26,7 +26,7 @@ $selected_fg_color: #fefefe;
 $selected_bg_color: #a67cf3;
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
-$borders_color: if($variant == 'light', transparentize(black,0.87), transparentize(#eee,0.9));
+$borders_color: if($variant == 'light', transparentize(black,0.87), darken($bg_color, 5%));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);

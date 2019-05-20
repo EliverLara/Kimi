@@ -2559,8 +2559,12 @@ headerbar {
       border-style: none; }
   .titlebar .linked > button:active,
   headerbar .linked > button:active {
-    background: #00e8b7;
-    color: snow; }
+    background: #f0f0f0;
+    box-shadow: none;
+    border: none;
+    color: #a4a4a4;
+    padding-top: 4px;
+    padding-bottom: 4px; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
     background: #f0f0f0;
@@ -2568,13 +2572,28 @@ headerbar {
     border: none;
     color: #a4a4a4;
     padding-top: 4px;
-    padding-bottom: 4px; }
+    padding-bottom: 4px;
+    border-radius: 4px; }
     .titlebar .linked > button:checked:backdrop,
     headerbar .linked > button:checked:backdrop {
       color: #ffe6e6; }
       .titlebar .linked > button:checked:backdrop label,
       headerbar .linked > button:checked:backdrop label {
         color: #ffe6e6; }
+  .titlebar .linked:not(.vertical) > entry,
+  headerbar .linked:not(.vertical) > entry {
+    border-color: rgba(0, 0, 0, 0.13);
+    box-shadow: none;
+    background: #f8f8f8;
+    color: #31363D;
+    caret-color: #31363D;
+    border-radius: 15px; }
+    .titlebar .linked:not(.vertical) > entry *,
+    headerbar .linked:not(.vertical) > entry * {
+      color: #31363D; }
+    .titlebar .linked:not(.vertical) > entry:focus,
+    headerbar .linked:not(.vertical) > entry:focus {
+      border-color: #a67cf3; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
@@ -4112,7 +4131,7 @@ placessidebar.sidebar {
     placessidebar.sidebar row.sidebar-row:selected:backdrop {
       color: rgba(0, 0, 0, 0.54);
       background-color: transparent;
-      background-image: linear-gradient(to right, #a67cf3 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      background-image: linear-gradient(to right, #a67cf3 35px, rgba(65, 67, 75, 0) 30px, rgba(65, 67, 75, 0) 97%); }
     placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
       -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
       color: inherit; }
@@ -4345,8 +4364,7 @@ switch {
   border-radius: 14px;
   color: transparent;
   padding: 2.3px 0px;
-  background: linear-gradient(to right, #859398, #859398);
-  box-shadow: 0px 2px 3px rgba(138, 138, 138, 0.753); }
+  background: linear-gradient(to right, #859398, #859398); }
   switch:disabled {
     background-color: #f0f2f4; }
   switch:backdrop {
@@ -4355,11 +4373,11 @@ switch {
     switch:backdrop:disabled {
       background-color: #f0f2f4; }
   switch:active, switch:checked {
-    background: linear-gradient(to right, #ff9200, #fadd00); }
+    background: linear-gradient(to right, #a47db4, #a67cf3); }
     switch:active slider, switch:checked slider {
       background: #fff; }
     switch:active:backdrop, switch:checked:backdrop {
-      background: linear-gradient(to right, #e68300, #e1c600); }
+      background: linear-gradient(to right, #996dab, #9665f1); }
       switch:active:backdrop slider:backdrop, switch:checked:backdrop slider:backdrop {
         box-shadow: none;
         background-color: rgba(240, 240, 240, 0.9);
