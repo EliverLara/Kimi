@@ -56,7 +56,7 @@
 
   notebook {
     > stack:only-child { // the :not(:only-child) is for "hidden" notebooks
-        background-color: $base_color;
+        background-color: $light_base_color;
         &:backdrop { background-color: $backdrop_base_color; }
     }
   }
@@ -77,11 +77,11 @@
       widget > .text-button:last-child,
       button:active, button:checked {
           @include button(active-header);
-          &:backdrop{
-            &, label{
-              color: darken(rgb(255, 250, 250), 4%);
-            }
-          }
+          // &:backdrop{
+          //   &, label{
+          //     color:  darken($base_color,30%);;
+          //   }
+          // }
       }
     }
     .linked:not(.path-bar) {

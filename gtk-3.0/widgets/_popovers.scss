@@ -4,7 +4,7 @@
 
 popover.background {
   padding: 2px;
-  border-radius: 5px;
+  border-radius: 7px;
   background: if( $variant == 'light', linear-gradient(to bottom, #fff 20%, #fff), linear-gradient(to bottom, lighten($bg_color, 2%), darken($bg_color, 2%)));
 
   .csd &, & { border: 1px solid $borders_color; }

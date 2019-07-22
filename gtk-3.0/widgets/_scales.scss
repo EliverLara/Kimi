@@ -49,12 +49,12 @@ scale {
 
   &.horizontal {
     trough,
-    progress { min-height: 6px; }
+    progress { min-height: 2px; }
   }
 
   &.vertical {
     trough,
-    progress { min-width: 6px;}
+    progress { min-width: 2px;}
     highlight { @include scale-highlight(bottom); }
   }
 

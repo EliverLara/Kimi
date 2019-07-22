@@ -4,12 +4,13 @@
 // Main definitions
 $base_color: if($variant == 'light', #f0f0f0, lighten(#302b44, 1%));
 $text_color: if($variant == 'light', #31363D, #C3C7D1);
-$bg_color: if($variant == 'light',  #f0f4f7, #302b44);
+$bg_color: if($variant == 'light',  #EAEAEA, #302b44);
 $fg_color: if($variant == 'light', #31363d, #C3C7D1);
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
 $_sidebar_color: #393451;
-
+$sidebar_colors: #fbd19f,#f05b90,#a67cf3,#85e9ad,#587df8,#83e3da,#fbcdbf, #F4EE90, #FFB9D5, #98A2D1, #E2A0FF;
+$light_base_color: lighten($base_color, 2%);
 // Primary colors
 $lime: #85e9ad;
 $red: #fbcdbf;
@@ -75,9 +76,9 @@ $info_color: $lime;
 $question_color: $cyan;
 
 // Panel colors
-$panel_bg_color: transparentize($base_color, 0.3);
-$panel_fg_color: $fg_color;
-$panel_borders_color: transparentize($base_color, 0.8);
+$panel_bg_color: transparentize(black, 0);
+$panel_fg_color: #C3C7D1;
+$panel_borders_color: transparentize(black, 0.8);
 
 // Disabled state colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);

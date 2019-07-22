@@ -4,7 +4,7 @@
 notebook {
   > header {
     padding: 1px;
-    border-color: $borders_color;
+    border-color: transparent;
     border-width: 1px;
     background-color: $bg_color;
 
@@ -18,15 +18,17 @@ notebook {
     &.top {
       border-bottom-style: solid;
       > tabs {
-        margin-bottom: -3px;
+        margin-bottom: -2px;
         > tab {
 
 
           &:backdrop { box-shadow: none; }
 
           &:checked {
-              background-color: $bg_color;
-              &:hover{background-color: $bg_color;}
+            &, &:backdrop{
+              background-color: $light_base_color;
+              &:hover{background-color: $light_base_color;}
+            }
           }
         }
       }
@@ -42,10 +44,7 @@ notebook {
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background-color: $bg_color; 
-            box-shadow: -1px 0 0 $borders_color,
-            0px 1px 0 $borders_color,
-            1px 0 0 $borders_color;
+            background-color: $light_base_color; 
           }
         }
       }
@@ -61,10 +60,7 @@ notebook {
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background-color: $bg_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            0px 1px 0 $borders_color;
+            background-color: $light_base_color; 
            }
         }
       }
@@ -75,15 +71,9 @@ notebook {
       > tabs {
         margin-left: -2px;
         > tab {
-
-
           &:backdrop { box-shadow: none; }
-
           &:checked { 
-            background-color: $bg_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            1px 0 0 $borders_color;
+            background-color: $light_base_color; 
           }
         }
       }
@@ -188,14 +178,17 @@ notebook {
 
       &:checked {
         color: $fg_color;
-        box-shadow: -1px 0 0 $borders_color,
-                    0px -1px 0 $borders_color,
-                    1px 0 0 $borders_color;
         &.reorderable-page {
           border-color: transparentize($borders_color, 0.5);
           background-color: transparentize($bg_color, 0.5);
 
           &:hover { background-color: transparentize($bg_color, 0.3); }
+        }
+      }
+
+      &:hover, &:checked, &:backdrop:checked {
+        button.flat {
+          color: gtkalpha(currentColor, 0.3); 
         }
       }
 
@@ -215,7 +208,7 @@ notebook {
           color: $red; 
         }
 
-        &, &:backdrop { color: gtkalpha(currentColor, 0.3); }
+        &, &:backdrop { color: gtkalpha(currentColor, 0); }
 
         padding: 0;
         margin-top: 4px;
@@ -292,9 +285,9 @@ notebook {
   }
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks
-    background-color: $bg_color;
+    background-color: $light_base_color;
 
-    &:backdrop { background-color: $backdrop_bg_color; }
+    &:backdrop { background-color: $light_base_color; }
   }
 
   button.flat{
