@@ -26,7 +26,15 @@ notebook {
 
           &:checked {
             &, &:backdrop{
-              background-color: $light_base_color;
+              background-color: $base_color;
+              background:
+              linear-gradient(to right, $selected_bg_color ,#E100FF )
+              left 
+              bottom
+              $light_base_color
+              no-repeat; 
+              background-size: 100% 2px;
+              border: 0;
               &:hover{background-color: $light_base_color;}
             }
           }
@@ -37,14 +45,21 @@ notebook {
     &.bottom {
       border-top-style: solid;
       > tabs {
-        margin-top: -2px;
+        margin-top: 0px;
         > tab {
 
 
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background-color: $light_base_color; 
+            background:
+            linear-gradient(to right, #5800E2 ,#FF00E6 )
+            left 
+            top
+            $light_base_color    
+            no-repeat ; 
+            background-size: 100% 2px ;
+            border: 0 ;
           }
         }
       }
@@ -53,14 +68,22 @@ notebook {
     &.left {
       border-right-style: solid;
       > tabs {
-        margin-right: -2px;
+        margin-right: 0px;
         > tab {
 
 
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background-color: $light_base_color; 
+            background-color: $base_color; 
+            background:
+            linear-gradient(to bottom, #5800E2 ,#FF00E6 )
+            right 
+            bottom
+            $light_base_color
+            no-repeat; 
+            background-size: 2px 100%;
+            border: 0; 
            }
         }
       }
@@ -69,11 +92,19 @@ notebook {
     &.right {
       border-left-style: solid;
       > tabs {
-        margin-left: -2px;
+        margin-left: 0px;
         > tab {
           &:backdrop { box-shadow: none; }
           &:checked { 
-            background-color: $light_base_color; 
+            background-color: $base_color; 
+            background:
+            linear-gradient(to bottom, #5800E2 ,#FF00E6 )
+            left 
+            bottom
+            $light_base_color
+            no-repeat; 
+            background-size: 2px 100%;
+            border: 0; 
           }
         }
       }

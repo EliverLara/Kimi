@@ -76,23 +76,10 @@
       }
       widget > .text-button:last-child,
       button:active, button:checked {
-          @include button(active-header);
-          // &:backdrop{
-          //   &, label{
-          //     color:  darken($base_color,30%);;
-          //   }
-          // }
+        @include button(active-header);
       }
     }
-    .linked:not(.path-bar) {
-      button {
-        &:active, &:checked, &:active:backdrop, &:checked:backdrop {
-          background: transparent;
-          color: $selected_bg_color;
-          box-shadow: none;
-          border: none;      }
-      }
-    }
+
   }
 }
 

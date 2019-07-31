@@ -3069,33 +3069,44 @@ notebook > header {
       notebook > header.top > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:backdrop {
-        background-color: #37314d; }
+        background-color: #322d47;
+        background: linear-gradient(to right, #a67cf3, #E100FF) left bottom #37314d no-repeat;
+        background-size: 100% 2px;
+        border: 0; }
         notebook > header.top > tabs > tab:checked:hover, notebook > header.top > tabs > tab:checked:backdrop:hover {
           background-color: #37314d; }
   notebook > header.bottom {
     border-top-style: solid; }
     notebook > header.bottom > tabs {
-      margin-top: -2px; }
+      margin-top: 0px; }
       notebook > header.bottom > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
-        background-color: #37314d; }
+        background: linear-gradient(to right, #5800E2, #FF00E6) left top #37314d no-repeat;
+        background-size: 100% 2px;
+        border: 0; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
-      margin-right: -2px; }
+      margin-right: 0px; }
       notebook > header.left > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
-        background-color: #37314d; }
+        background-color: #322d47;
+        background: linear-gradient(to bottom, #5800E2, #FF00E6) right bottom #37314d no-repeat;
+        background-size: 2px 100%;
+        border: 0; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
-      margin-left: -2px; }
+      margin-left: 0px; }
       notebook > header.right > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
-        background-color: #37314d; }
+        background-color: #322d47;
+        background: linear-gradient(to bottom, #5800E2, #FF00E6) left bottom #37314d no-repeat;
+        background-size: 2px 100%;
+        border: 0; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -5661,12 +5672,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border: none;
   color: black; }
 
-.nautilus-window .titlebar .linked:not(.path-bar) button:active, .nautilus-window .titlebar .linked:not(.path-bar) button:checked, .nautilus-window .titlebar .linked:not(.path-bar) button:active:backdrop, .nautilus-window .titlebar .linked:not(.path-bar) button:checked:backdrop {
-  background: transparent;
-  color: #a67cf3;
-  box-shadow: none;
-  border: none; }
-
 .nautilus-circular-button {
   border-radius: 20px;
   -gtk-outline-radius: 20px; }
@@ -5842,11 +5847,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: transparent;
   transition: all 100ms ease-in-out; }
   .panel.maximized {
-    background-color: #181b28; }
+    background-color: black; }
   .panel.translucent {
-    background-color: rgba(24, 27, 40, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5); }
   .panel.color-light.translucent {
-    background-color: rgba(255, 255, 255, 0.85); }
+    background-color: rgba(195, 199, 209, 0.85); }
 
 menubar.panel,
 .panel menubar {
