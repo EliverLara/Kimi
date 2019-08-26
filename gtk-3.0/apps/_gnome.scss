@@ -79,6 +79,9 @@
         @include button(active-header);
       }
     }
+    .search {
+      border: 1px solid $borders_color;
+    }
 
   }
 }

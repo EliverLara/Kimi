@@ -33,7 +33,7 @@ headerbar {
   
   button {
     @include button(normal-header);
-    min-height: 14px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 4px;

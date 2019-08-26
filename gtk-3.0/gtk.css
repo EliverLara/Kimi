@@ -2357,7 +2357,7 @@ headerbar {
     box-shadow: none;
     background: transparent;
     border: none;
-    min-height: 14px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 4px;
@@ -5699,6 +5699,9 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   box-shadow: none;
   border: none;
   color: #a4a4a4; }
+
+.nautilus-window .titlebar .search {
+  border: 1px solid rgba(0, 0, 0, 0.13); }
 
 .nautilus-circular-button {
   border-radius: 20px;
