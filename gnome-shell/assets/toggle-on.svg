@@ -14,23 +14,56 @@
    height="21"
    id="svg2857"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="toggle-on.svg">
   <defs
      id="defs2859">
+    <linearGradient
+       id="linearGradient856">
+      <stop
+         id="stop852"
+         offset="0"
+         style="stop-color:#a47db4;stop-opacity:1" />
+      <stop
+         id="stop854"
+         offset="1"
+         style="stop-color:#a67cf3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient850">
+      <stop
+         style="stop-color:#a47db4;stop-opacity:1"
+         offset="0"
+         id="stop846" />
+      <stop
+         style="stop-color:#a67cf3;stop-opacity:1"
+         offset="1"
+         id="stop848" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3864">
+      <stop
+         id="stop841"
+         offset="0"
+         style="stop-color:#a248af;stop-opacity:1;" />
+      <stop
+         id="stop843"
+         offset="1"
+         style="stop-color:#a86ab1;stop-opacity:1;" />
+    </linearGradient>
     <linearGradient
        id="linearGradient844">
       <stop
          id="stop840"
          offset="0"
-         style="stop-color:#ff9200;stop-opacity:1" />
+         style="stop-color:#a47db4;stop-opacity:1" />
       <stop
          id="stop842"
          offset="1"
          style="stop-color:#fadd00;stop-opacity:1" />
     </linearGradient>
     <linearGradient
-       id="linearGradient3864">
+       id="linearGradient3864-3">
       <stop
          style="stop-color:#a248af;stop-opacity:1;"
          offset="0"
@@ -68,7 +101,7 @@
     </clipPath>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3864"
+       xlink:href="#linearGradient3864-3"
        id="linearGradient3870"
        x1="464.64285"
        y1="783.36218"
@@ -78,7 +111,7 @@
        gradientTransform="translate(-444.64286,-782.36221)" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3864"
+       xlink:href="#linearGradient3864-3"
        id="linearGradient3789"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-444.64286,-782.36221)"
@@ -88,7 +121,7 @@
        y2="803.36218" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3864"
+       xlink:href="#linearGradient3864-3"
        id="linearGradient3808"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-444.64286,-782.36221)"
@@ -111,7 +144,7 @@
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient844"
+       xlink:href="#linearGradient850"
        id="linearGradient838"
        x1="462.14285"
        y1="792.86218"
@@ -120,7 +153,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient844"
+       xlink:href="#linearGradient856"
        id="linearGradient852"
        x1="462.14285"
        y1="792.86218"
@@ -135,8 +168,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.826962"
-     inkscape:cx="30.007788"
+     inkscape:zoom="8.9346094"
+     inkscape:cx="21.658261"
      inkscape:cy="9.1634726"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -144,7 +177,7 @@
      inkscape:window-width="1280"
      inkscape:window-height="707"
      inkscape:window-x="86"
-     inkscape:window-y="25"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      borderlayer="true"
      inkscape:showpageshadow="false"
@@ -187,7 +220,7 @@
        transform="translate(444.64286,782.36218)"
        id="path900" />
     <path
-       style="fill:url(#linearGradient838);fill-opacity:1;stroke:url(#linearGradient852);stroke-opacity:1"
+       style="fill:url(#linearGradient838);fill-opacity:1.0;stroke:url(#linearGradient852);stroke-opacity:1"
        d="m 472.14286,783.36218 a 9.5,9.5 0 0 0 -9.5,9.5 9.5,9.5 0 0 0 9.5,9.5 h 7.5 2 7.5 a 9.5,9.5 0 0 0 9.5,-9.5 9.5,9.5 0 0 0 -9.5,-9.5 h -7.5 -2 z"
        id="path872"
        inkscape:connector-curvature="0" />

@@ -5,10 +5,9 @@ node_modules/
 .sass-cache/
 *.css.map
 
-_gnome-shell/
-gnome-shell/dark-and-white/
-gnome-shell/dark/
-gnome-shell/light/
+gnome-shell/dark
+gnome-shell/light
+gnome-shell/dark-and-white
 
 
 install.sh
