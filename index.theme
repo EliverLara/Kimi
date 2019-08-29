@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Sweet
-Comment=Light and dark colorful Gtk3.20+ theme
+Name=Kimi
+Comment=Light Gtk3.20+ theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Sweet
-MetacityTheme=Sweet
+GtkTheme=Kimi
+MetacityTheme=Kimi
 IconTheme=Boston
 ButtonLayout=:minimize,maximize,close
