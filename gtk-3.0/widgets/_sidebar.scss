@@ -152,7 +152,10 @@ placessidebar{
 				}
 
 				&:selected{
-					color: #fff;
+          color: #fff;
+          label {
+            color: #fff;
+          }
 					background-color: transparent;
 					background-image:linear-gradient(to right, #a67cf3 35px, #584e7b 30px,#584e7b 97%);
           border-radius: 12px 0px 0px 12px;
@@ -160,7 +163,8 @@ placessidebar{
 
           @for $i from 1 through 11{
             &:nth-child(#{$i}),&:nth-child(#{$i}):backdrop {
-              background-image:linear-gradient(to right, #{nth($sidebar_colors, $i)} 35px, #584e7b 30px,#584e7b 97%);
+              $_color: nth($sidebar_colors, $i);
+              background-image:linear-gradient(to right, $_color 35px, transparentize($_color, 0.7) 30px,transparentize($_color, 0.7) 97%);
             }
           }
             
@@ -172,7 +176,10 @@ placessidebar{
 						}
           }
           &:backdrop{
-            color: rgba(0,0,0,0.54);;
+            color: rgba(0,0,0,0.54);
+            label {
+              color: $backdrop_fg_color;
+            }
             background-color: transparent;
           }
 

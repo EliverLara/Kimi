@@ -265,7 +265,7 @@
   background-color: lighten($base_color,2%);
   box-shadow: none;
   border:none;
-  color: darken($base_color,30%);
+  color: #8b8b8b;
 }
 
 @else if $t==backdrop-header {
