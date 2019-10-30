@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Kimi
+Name=Kimi-dark
 Comment=Light Gtk3.20+ theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Kimi
-MetacityTheme=Kimi
+GtkTheme=Kimi-dark
+MetacityTheme=Kimi-dark
 IconTheme=Boston
 ButtonLayout=:minimize,maximize,close
