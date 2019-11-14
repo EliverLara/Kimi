@@ -493,7 +493,8 @@ StScrollBar {
 /* Popovers/Menus */
 .popup-menu {
   min-width: 15em;
-  background-color: transparent; }
+  background-color: transparent;
+  color: #a4a4a4; }
   .popup-menu .popup-sub-menu {
     background-color: whitesmoke;
     color: #a4a4a4;
@@ -913,7 +914,8 @@ StScrollBar {
   height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 1.4em; }
+  border-radius: 1.4em;
+  color: #a4a4a4; }
   .calendar-day-base:hover, .calendar-day-base:focus {
     background-color: white; }
   .calendar-day-base:active, .calendar-day-base:selected {
@@ -968,6 +970,8 @@ StScrollBar {
   width: 31.5em; }
   .message-list .message-title {
     color: #979797; }
+  .message-list .message-content {
+    color: #a4a4a4; }
 
 .message-list-clear-button.button {
   color: #a4a4a4;
@@ -1005,6 +1009,7 @@ StScrollBar {
   background: transparent; }
 
 .message {
+  border: none;
   border-radius: 1px;
   background: transparent; }
   .message:hover, .message:focus {
