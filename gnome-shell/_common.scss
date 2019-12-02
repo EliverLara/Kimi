@@ -770,7 +770,7 @@ StScrollBar {
   transition-duration: 500ms;
   font-weight: bold;
   height: 2em;
-  padding: 2px 0px;
+  padding: 0px 0px;
 
   &.unlock-screen,
   &.login-screen,
@@ -805,11 +805,7 @@ StScrollBar {
     font-weight: bold;
     color: $topbar_color;
     transition-duration: 100ms;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-
+   
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
