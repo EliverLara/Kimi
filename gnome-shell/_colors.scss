@@ -17,7 +17,7 @@ $g2: #45b3be;
 $selected_fg_color: #fefefe;
 $selected_bg_color: #45b3be;
 $selected_borders_color: darken($selected_bg_color, 10%);
-$borders_color: darken(#1d2021, 3%);
+$borders_color: darken($base_color, 5%);
 $borders_edge: transparentize(white, 0.9);
 $link_color: #13b1d5;
 $link_visited_color: transparentize($link_color,0.5);

@@ -1084,12 +1084,11 @@ StScrollBar {
         .message {
           &:hover,&:focus { 
             background-color: darken($bg_color, 1%);
-            //@include gradient();
             box-shadow: 2px 0px 0px 0px $g2 inset;
            }
-          border: none;
-          border-radius: 1px;
-          background: transparent;
+          border: 1px solid $borders_color;
+          border-radius: 3px;
+          background: darken($bg_color, 1%);;
         }
 
           .message-icon-bin {
