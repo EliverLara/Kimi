@@ -26,14 +26,7 @@ notebook {
 
           &:checked {
             &, &:backdrop{
-              background-color: $base_color;
-              background:
-              linear-gradient(to right, $selected_bg_color ,#E100FF )
-              left 
-              bottom
-              $light_base_color
-              no-repeat; 
-              background-size: 100% 2px;
+              @include selected-tab(right);
               border: 0;
               &:hover{background-color: $light_base_color;}
             }
@@ -52,13 +45,7 @@ notebook {
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background:
-            linear-gradient(to right, #5800E2 ,#FF00E6 )
-            left 
-            top
-            $light_base_color    
-            no-repeat ; 
-            background-size: 100% 2px ;
+            @include selected-tab(right);
             border: 0 ;
           }
         }
@@ -75,14 +62,7 @@ notebook {
           &:backdrop { box-shadow: none; }
 
           &:checked { 
-            background-color: $base_color; 
-            background:
-            linear-gradient(to bottom, #5800E2 ,#FF00E6 )
-            right 
-            bottom
-            $light_base_color
-            no-repeat; 
-            background-size: 2px 100%;
+            @include selected-tab(bottom);
             border: 0; 
            }
         }
@@ -96,14 +76,7 @@ notebook {
         > tab {
           &:backdrop { box-shadow: none; }
           &:checked { 
-            background-color: $base_color; 
-            background:
-            linear-gradient(to bottom, #5800E2 ,#FF00E6 )
-            left 
-            bottom
-            $light_base_color
-            no-repeat; 
-            background-size: 2px 100%;
+            @include selected-tab(bottom);
             border: 0; 
           }
         }

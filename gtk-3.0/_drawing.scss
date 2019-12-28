@@ -605,3 +605,15 @@ box-shadow: none;
 @mixin scale-highlight($dir) {
   background: linear-gradient(to $dir, $selected_bg_color, #E100FF);
 }
+
+
+@mixin selected-tab($dir) {
+  background:
+  linear-gradient(to $dir, $selected-tab-gradient-start, $selected-tab-gradient-end)
+  left 
+  bottom
+  $light_base_color
+  no-repeat; 
+  @if $dir==right { background-size: 100% 2px; }
+  @else if $dir==bottom { background-size: 2px 100%; } 
+}
