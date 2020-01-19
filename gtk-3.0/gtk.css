@@ -3214,7 +3214,6 @@ notebook > header {
         margin-left: 4px;
         margin-right: -4px; }
       notebook > header tab button.flat:first-child {
-        margin-left: -4px;
         margin-right: 4px; }
   notebook > header.top tabs, notebook > header.bottom tabs {
     padding-left: 0px;
