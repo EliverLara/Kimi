@@ -10,11 +10,11 @@
 
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#0c0e14" />
-<constant name="C_titlebar_unfocused" value="#0c0e14" />
-<constant name="C_border_focused" value="#0c0e14" />
-<constant name="C_border_unfocused" value="#0c0e14" />
-<constant name="C_title_focused" value="#d8dee9" />
+<constant name="C_titlebar" value="#fff" />
+<constant name="C_titlebar_unfocused" value="#fff" />
+<constant name="C_border_focused" value="#fff" />
+<constant name="C_border_unfocused" value="#fff" />
+<constant name="C_title_focused" value="#31363D" />
 <constant name="C_title_unfocused" value="#93979f" />
 
 <constant name="C_wm_button_background" value="#fc2" />
@@ -29,10 +29,10 @@
 <!-- GEOMETRY -->
 
 <!-- Focused window -->
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="3" rounded_top_right="3">
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="3" />
 	<distance name="left_titlebar_edge" value="5" />
 	<distance name="right_titlebar_edge" value="5" />
 	<distance name="title_vertical_pad" value="4" />
@@ -42,7 +42,7 @@
 </frame_geometry>
 
 <!-- Unfocused window -->
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal" >
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="3" rounded_top_right="3" parent="normal" >
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
@@ -55,9 +55,9 @@
 
 <!-- Maximized window -->
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
-	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
-	<distance name="bottom_height" value="1" />
+	<distance name="left_width" value="0" />
+	<distance name="right_width" value="0" />
+	<distance name="bottom_height" value="0" />
 	<distance name="title_vertical_pad" value="4" />
 	<border name="title_border" left="4" right="4" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="4" bottom="4" />
