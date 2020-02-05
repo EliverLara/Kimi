@@ -287,11 +287,10 @@ LibraryWindow {
 
 /**level bars**/
 
-.sidebar .source-list{
-  &.view {
+.sidebar .source-list.view {
     &.level-bar {
       &,&:selected,&:selected:focus{
-        background-color: lighten($_sidebar_color, 15%);
+        background: linear-gradient(lighten($_sidebar_color, 15%), lighten($_sidebar_color, 15%));
         border: 1px solid transparentize(black, 0.86);
         box-shadow: 0 1px 0 transparentize(#000, 0.75);
         border-radius: 2px;
@@ -300,11 +299,10 @@ LibraryWindow {
         border: none;
       }
     }
-    &.fill-block{
-      &,&:hover,&:selected,&:selected:focus{
+    &.fill-block {
+      &, &:hover, &:selected, &:selected:focus {
         background-image: none;
-        background-color: $yellow;
+        background: linear-gradient($yellow, $yellow);
       }
     }
-  }
 }
