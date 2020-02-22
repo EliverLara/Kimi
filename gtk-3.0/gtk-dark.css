@@ -5048,7 +5048,7 @@ button.raven-trigger {
     border-radius: 0; }
     .budgie-panel button.flat {
       background: transparent;
-      border: 1px solid rgba(35, 32, 50, 0.95);
+      border: none;
       color: #98abb2; }
       .budgie-panel button.flat:hover, .budgie-panel button.flat:active, .budgie-panel button.flat:checked {
         background: transparent;
