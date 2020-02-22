@@ -1617,13 +1617,12 @@ StScrollBar {
     color: $topbar_color;
     background-color: $bg_color;
     border: 1px solid transparent;
-    box-shadow: 0 5px 12px rgb(211, 211, 211);
     &:hover { 
-      background-color: transparentize($bg_color, 0.04);
-      box-shadow: 0 5px 12px rgb(211, 211, 211);
+      background-color: darker($bg_color, 2%);
       border: 1px solid $borders_color;
     }
-    &:focus { background-color: transparentize($bg_color, 0.04);  box-shadow: 0 5px 12px rgb(211, 211, 211);}
+    &:focus { 
+      background-color: transparentize($bg_color, 0.04);}
     *{ color: $topbar_color; }
 
     .notification-icon { padding: 5px; }
@@ -1635,7 +1634,7 @@ StScrollBar {
       spacing: 1px;
     }
     .notification-button {
-      padding: 4px 4px 5px;
+      padding: 0px;
       background-color: transparentize($bg_color, 0.1);
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
