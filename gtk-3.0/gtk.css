@@ -3489,7 +3489,7 @@ scale {
       border-color: transparent;
       background-color: transparent; }
   scale slider {
-    border-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
     border-radius: 12px;
     background-color: #fff; }
     scale slider:active {
