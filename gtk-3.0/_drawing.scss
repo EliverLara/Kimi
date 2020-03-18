@@ -222,7 +222,7 @@
   //
   // normal button
   //
-    font-weight: bolder;
+    font-weight: normal;
     color: $tc;
     background-color: lighten($base_color,3%);
     text-shadow: none;
@@ -616,4 +616,5 @@ box-shadow: none;
   no-repeat; 
   @if $dir==right { background-size: 100% 2px; }
   @else if $dir==bottom { background-size: 2px 100%; } 
+  border: none;
 }

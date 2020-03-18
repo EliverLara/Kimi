@@ -20,14 +20,10 @@ notebook {
       > tabs {
         margin-bottom: -2px;
         > tab {
-
-
           &:backdrop { box-shadow: none; }
-
           &:checked {
             &, &:backdrop{
               @include selected-tab(right);
-              border: 0;
               &:hover{background-color: $light_base_color;}
             }
           }
@@ -40,13 +36,9 @@ notebook {
       > tabs {
         margin-top: 0px;
         > tab {
-
-
           &:backdrop { box-shadow: none; }
-
           &:checked { 
             @include selected-tab(right);
-            border: 0 ;
           }
         }
       }
@@ -57,13 +49,9 @@ notebook {
       > tabs {
         margin-right: 0px;
         > tab {
-
-
           &:backdrop { box-shadow: none; }
-
           &:checked { 
             @include selected-tab(bottom);
-            border: 0; 
            }
         }
       }
@@ -77,7 +65,6 @@ notebook {
           &:backdrop { box-shadow: none; }
           &:checked { 
             @include selected-tab(bottom);
-            border: 0; 
           }
         }
       }
@@ -157,7 +144,7 @@ notebook {
       outline-offset: -5px;
 
       color: $insensitive_fg_color;
-      font-weight: bold;
+      font-weight: normal;
 
       border-width: 1px;         // for reorderable tabs
       border-color: transparent; //
