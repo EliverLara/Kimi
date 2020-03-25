@@ -265,18 +265,18 @@
   background-color: lighten($base_color,2%);
   box-shadow: none;
   border:none;
-  color: darken($base_color,30%);
+  color: if($variant == 'light', darken($base_color, 30%), $fg_color);
 }
 
 @else if $t==backdrop-header {
-//
-// backdrop button headerbar look
-//
-color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
-background-color: transparent;
-border-radius: 0;
-text-shadow: none;
-box-shadow: none;
+  //
+  // backdrop button headerbar look
+  //
+  color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
+  background-color: transparent;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none;
 }
 
 

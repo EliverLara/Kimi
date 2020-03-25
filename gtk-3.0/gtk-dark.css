@@ -2403,7 +2403,7 @@ headerbar {
       background-color: #37314d;
       box-shadow: none;
       border: none;
-      color: black; }
+      color: #C3C7D1; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
@@ -2563,21 +2563,19 @@ headerbar {
     background-color: #37314d;
     box-shadow: none;
     border: none;
-    color: black; }
+    color: #C3C7D1; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
     border-radius: 5px;
     background-color: #37314d;
     box-shadow: none;
     border: none;
-    color: black;
+    color: #C3C7D1;
     border-radius: 5px; }
-    .titlebar .linked > button:checked:backdrop,
-    headerbar .linked > button:checked:backdrop {
-      color: black; }
-      .titlebar .linked > button:checked:backdrop label,
-      headerbar .linked > button:checked:backdrop label {
-        color: black; }
+    .titlebar .linked > button:checked:backdrop, .titlebar .linked > button:checked:backdrop label,
+    headerbar .linked > button:checked:backdrop,
+    headerbar .linked > button:checked:backdrop label {
+      color: #C3C7D1; }
   .titlebar .linked:not(.vertical) > entry,
   headerbar .linked:not(.vertical) > entry {
     border-color: #252134;
@@ -5302,7 +5300,7 @@ button.raven-trigger {
           background-color: #37314d;
           box-shadow: none;
           border: none;
-          color: black; }
+          color: #C3C7D1; }
   .raven list {
     color: #C3C7D1;
     background-color: transparent; }
@@ -5686,7 +5684,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: #37314d;
   box-shadow: none;
   border: none;
-  color: black; }
+  color: #C3C7D1; }
 
 .nautilus-window .titlebar .search {
   border: 1px solid #252134; }
