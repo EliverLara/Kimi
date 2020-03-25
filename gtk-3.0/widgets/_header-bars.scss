@@ -158,10 +158,9 @@ headerbar {
     @extend %linked-header;
     @include button(active-header);
     border-radius: 5px;
-    &:backdrop{
-      color:  darken($base_color,30%);
-      label{
-        color:  darken($base_color,30%);
+    &:backdrop {
+      &, label {
+        color:  #8b8b8b;
       }
     }
   }

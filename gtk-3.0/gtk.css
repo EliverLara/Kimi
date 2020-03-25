@@ -2572,12 +2572,10 @@ headerbar {
     border: none;
     color: #8b8b8b;
     border-radius: 5px; }
-    .titlebar .linked > button:checked:backdrop,
-    headerbar .linked > button:checked:backdrop {
-      color: black; }
-      .titlebar .linked > button:checked:backdrop label,
-      headerbar .linked > button:checked:backdrop label {
-        color: black; }
+    .titlebar .linked > button:checked:backdrop, .titlebar .linked > button:checked:backdrop label,
+    headerbar .linked > button:checked:backdrop,
+    headerbar .linked > button:checked:backdrop label {
+      color: #8b8b8b; }
   .titlebar .linked:not(.vertical) > entry,
   headerbar .linked:not(.vertical) > entry {
     border-color: #0e0d0f;
