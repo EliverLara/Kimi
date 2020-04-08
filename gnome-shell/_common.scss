@@ -8,7 +8,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula,0);
+$topbar_bg_color: transparentize($dracula, 0.2);
 
 stage {
   font-family: $font-family;
@@ -113,7 +113,7 @@ StScrollBar {
 
 .slider {
   height: 1em;
-  color: darken($main_dark, 7%);
+  color: darken($selected_fg_color, 25%);
   border-color: black;
   -slider-height: 0.1em;
   -slider-background-color: $gray; //background of the trough
@@ -128,10 +128,10 @@ StScrollBar {
   -barlevel-background-color: $gray;
   -barlevel-border-color: black;
   -barlevel-active-background-color: $cyan;
-  -barlevel-active-border-color: $lime;
+  -barlevel-active-border-color: $cyan;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px; 
-  -barlevel-overdrive-color: $cyan;
+  -barlevel-overdrive-color: $orange;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
 }
@@ -520,7 +520,7 @@ StScrollBar {
   color: $fg_color;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
-    background-color: $main_dark;
+    background-color: transparentize($main_dark, 0.55);
     color: $fg_color;
     box-shadow: none;
     margin: 0 4px;
@@ -561,6 +561,7 @@ StScrollBar {
     margin-bottom: 1.75em;
   }
 }
+
 
 
   .popup-menu-ornament {
@@ -830,8 +831,8 @@ StScrollBar {
       // a box-shadow
       box-shadow: none;
       border-radius: 5px;
-      background: lighten($base_color, 2%);
-      color: darken($base_color,30%);
+      background: lighten($topbar_bg_color, 2%);
+     // color: darken($base_color,30%);
       transition-duration: 200ms;
       .system-status-icon,
       .app-menu-icon > StIcon,
@@ -973,11 +974,6 @@ StScrollBar {
       &:active { background-color: transparentize($bg_color,0.95); }
     }
 
-    .calendar-change-month-back StIcon, .calendar-change-month-forward StIcon { 
-      icon-size: 1.09em;
-      color: $fg_color;
-    }
-
       .calendar-change-month-back { //arrow back
         background-image: url("assets/calendar-arrow-left.svg");
         &:rtl { background-image: url("assets/calendar-arrow-right.svg"); }
@@ -1088,12 +1084,12 @@ StScrollBar {
 
         .message {
           &:hover,&:focus { 
-            background-color: darken($bg_color, 2%);
+            background-color: darken($bg_color, 1%);
             box-shadow: 2px 0px 0px 0px $g2 inset;
            }
-          border: 1px solid darken($bg_color, 4%);
+          border: 1px solid $borders_color;
           border-radius: 3px;
-          background: darken($bg_color, 1%);
+          background: darken($bg_color, 1%);;
         }
 
           .message-icon-bin {
@@ -1309,7 +1305,7 @@ StScrollBar {
   .window-caption {
     spacing: 20px;
     color: $topbar_color;
-    background-color: transparentize($topbar_bg_color,0);
+    background-color: transparentize($osd_bg_color,.3);
     border-radius: 2px;
     padding: 4px 8px;
   }
@@ -1326,14 +1322,14 @@ StScrollBar {
     &:focus {
       border-width: 0;
       color: $fg_color;
-      background-color: transparentize($topbar_bg_color, 0);
+      background-color: transparentize($bg_color, 0.2);
       box-shadow: $depth2;
     }
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
-      background-color: transparentize($topbar_bg_color, 0);
+      background-color: transparentize($bg_color, 0.2);
       .search-entry-icon { color: $fg_color; }
     }
   }
@@ -1360,9 +1356,9 @@ StScrollBar {
   .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
 
   .list-search-result-content { spacing: 30px; }
-  .list-search-result-title { color: lighten($dark_text_color,5%); spacing: 12px; }
-  .list-search-result-description { color: transparentize(lighten($dark_text_color,10%), 0.2); }
-  .list-search-provider-details { width: 150px; color: lighten($dark_text_color,5%); margin-top: 0.24em; }
+  .list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
+  .list-search-result-description { color: transparentize(lighten($topbar_color,15%), 0.5); }
+  .list-search-provider-details { width: 150px; color: lighten($topbar_color,5%); margin-top: 0.24em; }
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
 
@@ -1521,13 +1517,8 @@ StScrollBar {
     -arrow-background-color: transparentize($bg_color,0.5);
     -arrow-base: 24px;
     -arrow-rise: 11px;
-    color:red;
   }
-  .app-folder-popup-bin { 
-    padding: 5px;
-    background: transparentize($bg_color,.5);
-    color:red;
-  }
+  .app-folder-popup-bin { padding: 5px; background: transparentize($bg_color,.5);;}
   .app-folder-icon {
     padding: 5px;
     spacing-rows: 5px;
@@ -1613,16 +1604,13 @@ StScrollBar {
     font-size: 11pt;
     width: 34em;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     color: $topbar_color;
     background-color: $bg_color;
-    border: 1px solid transparent;
-    &:hover { 
-      background-color: darker($bg_color, 2%);
-      border: 1px solid $borders_color;
-    }
-    &:focus { 
-      background-color: transparentize($bg_color, 0.04);}
+    border: 1px solid $borders_color;
+    box-shadow: 0 1px 4px black;
+    &:hover { background-color: transparentize($bg_color, 0.04); }
+    &:focus { background-color: transparentize($bg_color, 0.04); }
     *{ color: $topbar_color; }
 
     .notification-icon { padding: 5px; }
