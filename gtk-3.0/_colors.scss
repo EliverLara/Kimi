@@ -12,8 +12,8 @@ $_sidebar_color: #393451;
 $sidebar_colors: #fbd19f,#f05b90,#a67cf3,#85e9ad,#587df8,#83e3da,#fbcdbf, #F4EE90, #FFB9D5, #98A2D1, #E2A0FF;
 $light_base_color: lighten($base_color, 2%);
 // Primary colors
-$lime: #85e9ad;
-$red: #fbcdbf;
+$lime: darken(#85e9ad, 12%);
+$red:  darken(#fbcdbf, 12%);
 $orange: #ff6a00;
 $yellow: #fcda7a;
 $purple: #a47db4;
