@@ -28,10 +28,9 @@
   &:backdrop {
     background-color: $backdrop_sidebar_bg_color;
     border-color: $backdrop_borders_color;
-    transition: $backdrop_transition;
   }
 
-  row{
+  row {
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
