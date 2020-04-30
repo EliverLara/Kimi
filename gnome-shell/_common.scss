@@ -527,13 +527,14 @@ StScrollBar {
     border-radius: 0px 0px 5px 5px;
   }
 
-  .popup-menu-content { padding: 1em 0em; }
+  .popup-menu-content { padding: 16px 0; }
   .popup-menu-item {
-    spacing: 12px;
+    spacing: 6px;
+    padding: 6px;
     margin: 0 4px;
     border-radius: 5px 5px;
-    &:ltr { padding: .4em 1.75em .4em 0em; }
-    &:rtl { padding: .4em 0em .4em 1.75em; }
+    &:ltr { padding-right: 1.75em; padding-left: 0; }
+    &:rtl { padding-right: 0; padding-left: 1.75em; }
     &:checked {
       @include gradient();
       border-radius: 5px 5px 0px 0px;
@@ -580,13 +581,21 @@ StScrollBar {
   }
 
   .popup-separator-menu-item {
-    //-margin-horizontal: 24px;
-    height: 1px; //not really the whole box
-    margin: 6px 64px;
     background-color: transparent;
-    border-color: transparent;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    &-separator {
+      //-margin-horizontal: 24px;
+      height: 1px; //not really the whole box
+      margin: 6px 64px;
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+
+    .popup-sub-menu & &-separator { //submenu separators
+      margin: 0 64px 0 32px;
+      background: transparent;
+    }
   }
 
 
@@ -849,6 +858,16 @@ StScrollBar {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
     }
+
+    // Remove default bottom border
+    &.clock-display {
+      &:active, &:overview, &:focus, &:checked {
+        box-shadow: none;
+        .clock {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   .panel-status-indicators-box,
@@ -886,6 +905,11 @@ StScrollBar {
 
   .calendar {
     margin-bottom: 1em;
+  }
+
+  .calendar, .world-clocks-button, .weather-button {
+    background: transparent;
+    border: none;
   }
 
     .calendar,
@@ -1046,8 +1070,8 @@ StScrollBar {
         .message-title{
           color: darken($fg_color,5%);
         }
-        .message-content{
-          color:$fg_color;
+        .message-content, .message-body {
+          color: $fg_color;
         }
       }
 
@@ -1256,7 +1280,7 @@ StScrollBar {
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; }
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent; }
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
@@ -1347,7 +1371,14 @@ StScrollBar {
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-  .search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+  .search-section-content { 
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    // This is the space between the provider icon and the results container
+    spacing: 32px; 
+  }
   .search-statustext { // "no results"
     @extend %status_text;
   }
