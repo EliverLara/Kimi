@@ -910,6 +910,7 @@ StScrollBar {
   .calendar, .world-clocks-button, .weather-button {
     background: transparent;
     border: none;
+    color: $fg_color;
   }
 
     .calendar,
@@ -1653,8 +1654,9 @@ StScrollBar {
       spacing: 1px;
     }
     .notification-button {
-      padding: 0px;
+      padding: 5px;
       background-color: transparentize($bg_color, 0.1);
+      box-shadow: none;
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
       &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}

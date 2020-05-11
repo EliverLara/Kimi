@@ -816,7 +816,8 @@ StScrollBar {
 
 .calendar, .world-clocks-button, .weather-button {
   background: transparent;
-  border: none; }
+  border: none;
+  color: #98abb2; }
 
 .calendar,
 .datemenu-today-button,
@@ -1528,8 +1529,9 @@ StScrollBar {
     padding-top: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
-    padding: 0px;
-    background-color: rgba(26, 25, 29, 0.88); }
+    padding: 5px;
+    background-color: rgba(26, 25, 29, 0.88);
+    box-shadow: none; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 3px; }
     .notification-banner .notification-button:last-child {
