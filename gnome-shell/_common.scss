@@ -8,7 +8,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula, 0.35);
+$topbar_bg_color: transparentize($dracula, 0.2);
 
 stage {
   font-family: $font-family;
@@ -909,6 +909,7 @@ StScrollBar {
   .calendar, .world-clocks-button, .weather-button {
     background: transparent;
     border: none;
+    color: $fg_color;
   }
 
     .calendar,
@@ -1652,8 +1653,9 @@ StScrollBar {
       spacing: 1px;
     }
     .notification-button {
-      padding: 0px;
+      padding: 5px;
       background-color: transparentize($bg_color, 0.1);
+      box-shadow: none;
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
       &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
