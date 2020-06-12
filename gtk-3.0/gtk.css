@@ -3339,7 +3339,7 @@ popover.background {
   padding: 2px;
   border-radius: 7px;
   background: linear-gradient(to bottom, #1f1e22, #151418);
-  box-shadow: 0 4px 6px transparent; }
+  box-shadow: 0 4px 6px #0e0d0f; }
   .csd popover.background, popover.background {
     border: 1px solid #0e0d0f; }
   popover.background:backdrop {
@@ -4662,7 +4662,7 @@ decoration {
     box-shadow: none; }
   .csd.popup decoration {
     border-radius: 5px;
-    box-shadow: 0 4px 8px transparent; }
+    box-shadow: 0 4px 7px #0e0d0f; }
   tooltip.csd decoration {
     border-radius: 5px;
     box-shadow: none; }
