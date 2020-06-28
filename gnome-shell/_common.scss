@@ -7,8 +7,8 @@ $font-family: Roboto,Ubuntu, Cantarell, Sans-Serif;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
-$_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula, 0.03);
+$_bubble_transparent: transparentize($osd_bg_color, 0.05);
+$topbar_bg_color: transparentize($dracula, 0.02);
 
 stage {
   font-family: $font-family;
@@ -747,8 +747,9 @@ StScrollBar {
 %osd-panel {
   color: $_bubble_fg_color;
   background-color: $_bubble_bg_color;
-  border: none;
-  border-radius: 2px;
+  border: 1px solid $borders_color;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px $borders_color;
   padding: 12px;
 }
 
