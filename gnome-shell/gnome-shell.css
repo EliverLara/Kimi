@@ -234,6 +234,8 @@ StScrollBar {
     font-weight: bold;
     color: #7b939c;
     padding-bottom: .4em; }
+  .modal-dialog .run-dialog-description {
+    color: #98abb2; }
 
 .mount-dialog-subject,
 .end-session-dialog-subject {
@@ -1253,7 +1255,9 @@ StScrollBar {
   color: white;
   background-color: rgba(26, 25, 29, 0.63);
   border-radius: 2px;
-  padding: 4px 8px; }
+  padding: 4px 8px;
+  border-color: rgba(166, 124, 243, 0.3);
+  font-weight: normal; }
 
 .search-entry {
   width: 320px;
@@ -1331,7 +1335,7 @@ StScrollBar {
   padding: 6px 0;
   border: 1px solid #121213;
   border-left: 0px;
-  border-radius: 0px 5px 5px 0px; }
+  border-radius: 0px 10px 10px 0px; }
   #dash:rtl {
     border-radius: 9px 0 0 9px; }
   #dash .placeholder {
