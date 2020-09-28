@@ -2887,7 +2887,7 @@ row {
  *********/
 menubar,
 .menubar {
-  background-color: #1a191d;
+  background-color: #0d0d0f;
   color: #C3C7D1;
   -GtkWidget-window-dragging: true;
   padding: 0px;
@@ -5260,7 +5260,7 @@ button.raven-trigger {
     color: #C3C7D1;
     border: solid rgba(14, 13, 15, 0.95);
     border-width: 1px 0;
-    background-color: rgba(9, 8, 10, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5); }
     .raven .raven-header * {
       padding-top: 0;
       padding-bottom: 0; }
@@ -5572,10 +5572,10 @@ calendar.raven-calendar {
   min-height: 16px; }
   .budgie-menubar arrow.top {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-    border-bottom: 1px solid rgba(46, 45, 50, 0.928); }
+    border-bottom: 1px solid rgba(34, 34, 37, 0.928); }
   .budgie-menubar arrow.bottom {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-    border-top: 1px solid rgba(46, 45, 50, 0.928); }
+    border-top: 1px solid rgba(34, 34, 37, 0.928); }
 
 .budgie-menubar menuitem accelerator {
   color: rgba(195, 199, 209, 0.35); }
@@ -6227,7 +6227,7 @@ ConversationListView {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: #1a191d;
+  background-color: #0d0d0f;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
@@ -6283,3 +6283,59 @@ ConversationListView {
 #greeter_infobar {
   border-bottom-width: 0;
   font-weight: bold; }
+
+.nemo-window .places-treeview {
+  -NemoPlacesTreeView-disk-full-bg-color: #3c3c40;
+  -NemoPlacesTreeView-disk-full-fg-color: #fcda7a;
+  -GtkTreeView-vertical-separator: 10; }
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
+  .nemo-window .places-treeview iconview.cell:hover {
+    background: rgba(15, 15, 16, 0.7); }
+  .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview iconview.cell:selected {
+    background: #45b3be;
+    color: #fefefe; }
+
+.nemo-window .sidebar {
+  background-color: #171718; }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
+    color: #98abb2;
+    background-color: transparent; }
+
+.nemo-window .nemo-window-pane widget.entry {
+  background-clip: padding-box;
+  min-height: 28px;
+  padding: 5px;
+  color: #C3C7D1;
+  border: 1px solid #0e0d0f;
+  border-radius: 3px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
+  .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: #45b3be;
+    color: #fefefe; }
+
+.nemo-window toolbar.primary-toolbar {
+  margin-bottom: -1px;
+  background: #0d0d0f; }
+  .nemo-window toolbar.primary-toolbar button {
+    color: #8b8b8b;
+    text-shadow: none;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    min-height: 24px;
+    padding: 3px; }
+    .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:hover:backdrop, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
+      border-radius: 5px;
+      background-color: #232325;
+      box-shadow: none;
+      border: none;
+      color: #8b8b8b; }
+      .nemo-window toolbar.primary-toolbar button:hover label, .nemo-window toolbar.primary-toolbar button:hover:backdrop label, .nemo-window toolbar.primary-toolbar button:selected label, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active label, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked label, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
+        color: inherit; }
+    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
+      color: rgba(195, 199, 209, 0.2);
+      background-color: transparent;
+      border-radius: 0;
+      text-shadow: none;
+      box-shadow: none; }
