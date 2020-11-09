@@ -817,7 +817,7 @@ StScrollBar {
 .calendar {
   margin-bottom: 1em; }
 
-.calendar, .world-clocks-button, .weather-button {
+.calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
   color: #98abb2; }
@@ -849,7 +849,8 @@ StScrollBar {
 .world-clocks-button,
 .weather-button,
 .events-section-title,
-.message-list-section-title {
+.message-list-section-title,
+.events-button {
   border-radius: 4px;
   padding: .4em; }
 
@@ -867,14 +868,17 @@ StScrollBar {
 .events-section-title:hover,
 .events-section-title:focus,
 .message-list-section-title:hover,
-.message-list-section-title:focus {
+.message-list-section-title:focus,
+.events-button:hover,
+.events-button:focus {
   background-color: rgba(38, 37, 43, 0.98); }
 
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
 .events-section-title:active,
-.message-list-section-title:active {
+.message-list-section-title:active,
+.events-button:active {
   color: white;
   background-color: #a67cf3; }
 
@@ -884,7 +888,8 @@ StScrollBar {
 .world-clocks-header,
 .weather-header,
 .events-section-title,
-.message-list-section-title {
+.message-list-section-title,
+.events-title {
   color: #7b939c;
   font-weight: bold; }
 
