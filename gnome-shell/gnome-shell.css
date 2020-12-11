@@ -889,7 +889,7 @@ StScrollBar {
 .weather-header,
 .events-section-title,
 .message-list-section-title,
-.events-title {
+.events-title, .event-time {
   color: #7b939c;
   font-weight: bold; }
 

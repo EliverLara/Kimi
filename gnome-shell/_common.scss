@@ -977,7 +977,7 @@ StScrollBar {
     .weather-header,
     .events-section-title,
     .message-list-section-title,
-    .events-title {
+    .events-title, .event-time {
       color: darken($fg_color, 10%);
       font-weight: bold;
     }
