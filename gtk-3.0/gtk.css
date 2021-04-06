@@ -6407,3 +6407,10 @@ window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned
 
 window.thunar toolbar#location-toolbar entry {
   border-radius: 10px; }
+
+.caja-notebook .entry {
+  background: #1a191d;
+  color: #C3C7D1; }
+  .caja-notebook .entry:selected {
+    background: #45b3be;
+    color: #fefefe; }
