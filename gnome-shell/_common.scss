@@ -529,7 +529,11 @@ StScrollBar {
     border-radius: 0px 0px 5px 5px;
   }
 
-  .popup-menu-content { padding: 16px 0; }
+  .popup-menu-content { 
+    padding: 16px 0; 
+    background-color: $bg_color;
+    border-radius: 7px;
+  }
   .popup-menu-item {
     spacing: 6px;
     padding: 6px;
