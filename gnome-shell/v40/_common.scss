@@ -1584,7 +1584,7 @@ StScrollBar {
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: darken($main_dark, 3%);
+      background-color: lighten($bg_color, 8%);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
@@ -1592,7 +1592,7 @@ StScrollBar {
 
     &:active .overview-icon,
     &:checked .overview-icon {
-      background-color: darken($main_dark, 10%);
+      background-color: lighten($bg_color, 8%);
       box-shadow: inset $depth2;
       color: $fg_color;
     }
@@ -1618,7 +1618,7 @@ StScrollBar {
 
   /* App Folders */
 .app-well-app.app-folder {
-  background-color: $main_dark;
+  background-color: lighten($bg_color, 8%);
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
