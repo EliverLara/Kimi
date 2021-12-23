@@ -1947,7 +1947,7 @@ actionbar > revealer > box {
 scrolledwindow viewport.frame {
   border-style: none; }
 scrolledwindow overshoot.top {
-  background-image: radial-gradient(farthest-side at top, #0f0d15 85%, rgba(15, 13, 21, 0)), radial-gradient(farthest-side at top, #C3C7D1, rgba(195, 199, 209, 0));
+  background-image: radial-gradient(farthest-side at top, #211d2e 85%, rgba(33, 29, 46, 0)), radial-gradient(farthest-side at top, #211d2e, rgba(33, 29, 46, 0));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -1955,7 +1955,7 @@ scrolledwindow overshoot.top {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.top:backdrop {
-    background-image: radial-gradient(farthest-side at top, #262236 85%, rgba(38, 34, 54, 0));
+    background-image: radial-gradient(farthest-side at top, #211d2e 85%, rgba(33, 29, 46, 0));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center top;
@@ -1963,7 +1963,7 @@ scrolledwindow overshoot.top {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, #0f0d15 85%, rgba(15, 13, 21, 0)), radial-gradient(farthest-side at bottom, #C3C7D1, rgba(195, 199, 209, 0));
+  background-image: radial-gradient(farthest-side at bottom, #211d2e 85%, rgba(33, 29, 46, 0)), radial-gradient(farthest-side at bottom, #211d2e, rgba(33, 29, 46, 0));
   background-size: 100% 5%, 100% 100%;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -1971,7 +1971,7 @@ scrolledwindow overshoot.bottom {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.bottom:backdrop {
-    background-image: radial-gradient(farthest-side at bottom, #262236 85%, rgba(38, 34, 54, 0));
+    background-image: radial-gradient(farthest-side at bottom, #211d2e 85%, rgba(33, 29, 46, 0));
     background-size: 100% 5%;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -1979,7 +1979,7 @@ scrolledwindow overshoot.bottom {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.left {
-  background-image: radial-gradient(farthest-side at left, #0f0d15 85%, rgba(15, 13, 21, 0)), radial-gradient(farthest-side at left, #C3C7D1, rgba(195, 199, 209, 0));
+  background-image: radial-gradient(farthest-side at left, #211d2e 85%, rgba(33, 29, 46, 0)), radial-gradient(farthest-side at left, #211d2e, rgba(33, 29, 46, 0));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: left center;
@@ -1987,7 +1987,7 @@ scrolledwindow overshoot.left {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.left:backdrop {
-    background-image: radial-gradient(farthest-side at left, #262236 85%, rgba(38, 34, 54, 0));
+    background-image: radial-gradient(farthest-side at left, #211d2e 85%, rgba(33, 29, 46, 0));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: left center;
@@ -1995,7 +1995,7 @@ scrolledwindow overshoot.left {
     border: none;
     box-shadow: none; }
 scrolledwindow overshoot.right {
-  background-image: radial-gradient(farthest-side at right, #0f0d15 85%, rgba(15, 13, 21, 0)), radial-gradient(farthest-side at right, #C3C7D1, rgba(195, 199, 209, 0));
+  background-image: radial-gradient(farthest-side at right, #211d2e 85%, rgba(33, 29, 46, 0)), radial-gradient(farthest-side at right, #211d2e, rgba(33, 29, 46, 0));
   background-size: 5% 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -2003,7 +2003,7 @@ scrolledwindow overshoot.right {
   border: none;
   box-shadow: none; }
   scrolledwindow overshoot.right:backdrop {
-    background-image: radial-gradient(farthest-side at right, #262236 85%, rgba(38, 34, 54, 0));
+    background-image: radial-gradient(farthest-side at right, #211d2e 85%, rgba(33, 29, 46, 0));
     background-size: 5% 100%;
     background-repeat: no-repeat;
     background-position: right center;
