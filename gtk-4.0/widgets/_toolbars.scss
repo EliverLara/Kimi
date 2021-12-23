@@ -2,7 +2,6 @@
  * Toolbars *
  ************/
 %toolbar {
-  -GtkWidget-window-dragging: true;
   padding: 4px;
   background-color: $bg_color;
 }
@@ -55,8 +54,7 @@ toolbar {
   border-radius: 0  0 5px 5px;
 }
 
-searchbar,
-.location-bar {
+searchbar > revealer > box {
   @extend %toolbar;
 
   @extend %darkbar;
