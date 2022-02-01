@@ -74,7 +74,7 @@ scale {
     transition-property: background, border, box-shadow;
 
     &:active {
-      background-color: $selected_bg_color;
+      background-color: #E100FF;
 
       &:disabled {
         background-color: $insensitive_bg_color;
@@ -151,7 +151,7 @@ scale {
   $_scale_bg: if($variant == 'light', #fff, lighten($bg_color, 10%));
   $_scale_disabled_bg: darken($_scale_bg, 15%);
   slider {
-    border: 1px solid $base_color;
+    border: 1px solid #E100FF;
     border-radius: 12px;
 
     background-color: $_scale_bg;
@@ -160,7 +160,7 @@ scale {
 
     &:hover { @include button(hover-alt, $edge: $shadow_color); }
 
-    &:active { border-color: $selected_borders_color; }
+    //&:active { border-color: $selected_borders_color; }
 
     &:disabled {
       background-color: $_scale_disabled_bg;
@@ -179,38 +179,6 @@ scale {
 
     // ...on selected list rows
     row:selected & { &:disabled, & { border-color: $selected_borders_color; } }
-
-    // OSD
-    .osd & {
-      @include button(osd);
-      border-color: darken($osd_borders_color, 3%);
-      background-color: opacify($osd_bg_color, 1); // solid background needed here
-
-      &:hover {
-        @include button(osd-hover);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:active {
-        @include button(osd-active);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:disabled {
-        @include button(osd-insensitive);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:backdrop {
-        @include button(osd-backdrop);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-
-        &:disabled {
-          @include button(osd-backdrop-insensitive);
-          background-color: opacify($osd_bg_color, 1); // solid background needed here
-        }
-      }
-    }
   }
 
   value { color: gtkalpha(currentColor, 0.4); }
