@@ -836,11 +836,9 @@ StScrollBar {
 
 .datemenu-calendar-column {
   border: 0 solid transparent;
-  background: #18171a; }
-  .datemenu-calendar-column:ltr {
-    border-left-width: 1px; }
-  .datemenu-calendar-column:rtl {
-    border-right-width: 1px; }
+  background: #1f1e22;
+  border-radius: 7px;
+  box-shadow: 0px 0px 1px 1px #121213 inset; }
 
 .datemenu-today-button,
 .world-clocks-button,
@@ -1018,10 +1016,10 @@ StScrollBar {
 
 .message {
   border: 1px solid #121213;
-  border-radius: 3px;
-  background: #18171a; }
+  border-radius: 5px;
+  background: #1f1e22; }
   .message:hover, .message:focus {
-    background-color: #18171a;
+    background-color: #26252b;
     box-shadow: 2px 0px 0px 0px #a67cf3 inset; }
 
 .message-icon-bin {
