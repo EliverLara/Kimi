@@ -1433,18 +1433,17 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 100px;
-    border: none;
+    border-radius: 10px;
     color: $fg_color;
     background-color: $main_dark;
     box-shadow: $depth;
-    border: 1px solid $borders_color;
+    border: 2px solid $borders_color;
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
       background-color: lighten($main_dark, 2%);
-      border-color: transparentize($selected_bg_color, 0.5);
+      border-color: transparentize($selected_bg_color, 0.4);
       .search-entry-icon { color: $fg_color; }
     }
   }

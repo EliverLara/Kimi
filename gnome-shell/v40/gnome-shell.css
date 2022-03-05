@@ -1263,19 +1263,18 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 9px;
-  border-radius: 100px;
-  border: none;
+  border-radius: 10px;
   color: #98abb2;
   background-color: #0e0d0f;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border: 1px solid #121213; }
+  border: 2px solid #121213; }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
     color: rgba(152, 171, 178, 0.7); }
   .search-entry:hover, .search-entry:focus {
     background-color: #131215;
-    border-color: rgba(69, 179, 190, 0.5); }
+    border-color: rgba(69, 179, 190, 0.6); }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #98abb2; }
 
