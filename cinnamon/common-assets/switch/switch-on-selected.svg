@@ -18,13 +18,25 @@
      id="defs7541">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient892">
+      <stop
+         style="stop-color:#a47db4;stop-opacity:1"
+         offset="0"
+         id="stop888" />
+      <stop
+         style="stop-color:#45b3be;stop-opacity:1"
+         offset="1"
+         id="stop890" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient857">
       <stop
          style="stop-color:#a47db4;stop-opacity:1"
          offset="0"
          id="stop853" />
       <stop
-         style="stop-color:#a67cf3;stop-opacity:1"
+         style="stop-color:#45b3be;stop-opacity:1"
          offset="1"
          id="stop855" />
     </linearGradient>
@@ -151,7 +163,7 @@
        gradientUnits="userSpaceOnUse" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient857"
+       xlink:href="#linearGradient892"
        id="linearGradient897"
        x1="127.34"
        y1="-78"
@@ -181,7 +193,7 @@
      inkscape:grid-bbox="true"
      showgrid="true"
      inkscape:current-layer="layer1"
-     inkscape:cy="11.814175"
+     inkscape:cy="11.913454"
      inkscape:cx="13.998308"
      inkscape:zoom="10.072646"
      inkscape:pageshadow="2"
