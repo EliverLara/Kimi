@@ -266,8 +266,8 @@ StScrollBar {
   spacing: 42px;
   border: none; }
   .end-session-dialog .modal-dialog-linked-button:last-child {
-    background-gradient-start: #a47db4;
-    background-gradient-end: #a67cf3;
+    background-gradient-start: #a47db4 !important;
+    background-gradient-end: #a67cf3 !important;
     background-gradient-direction: horizontal;
     color: #fff; }
     .end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus {
@@ -517,8 +517,8 @@ StScrollBar {
       padding-right: 0;
       padding-left: 1.75em; }
     .popup-menu .popup-menu-item:checked {
-      background-gradient-start: #a47db4;
-      background-gradient-end: #a67cf3;
+      background-gradient-start: #a47db4 !important;
+      background-gradient-end: #a67cf3 !important;
       background-gradient-direction: horizontal;
       border-radius: 5px 5px 0px 0px;
       color: #fefefe;
@@ -932,8 +932,8 @@ StScrollBar {
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #fefefe;
     background-color: #a67cf3;
-    background-gradient-start: #a47db4;
-    background-gradient-end: #a67cf3;
+    background-gradient-start: #a47db4 !important;
+    background-gradient-end: #a67cf3 !important;
     background-gradient-direction: horizontal; }
   .calendar-day-base.calendar-day-heading {
     color: #7b939c;
@@ -1405,8 +1405,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    background-gradient-start: #a47db4;
-    background-gradient-end: #a67cf3;
+    background-gradient-start: #a47db4 !important;
+    background-gradient-end: #a67cf3 !important;
     background-gradient-direction: horizontal;
     color: #000; }
   .app-view-control:hover {
