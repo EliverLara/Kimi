@@ -1524,16 +1524,25 @@ StScrollBar {
     spacing: 1px;
     border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 7px;
-    background-color: rgba(26, 25, 29, 0.9);
-    box-shadow: none; }
+    padding: 8px;
+    color: #C3C7D1;
+    background-color: #232325;
+    box-shadow: none;
+    text-shadow: 0 1px black;
+    icon-shadow: 0 1px black;
+    border: 1px solid #121213;
+    border: none; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: #151418;
-      color: #45b3be; }
+      background-color: #2a2a2d;
+      color: #fefefe;
+      border: 1px solid #121213;
+      text-shadow: 0 1px black;
+      icon-shadow: 0 1px black;
+      border: none; }
 
 .summary-source-counter {
   font-size: 10pt;
