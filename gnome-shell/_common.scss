@@ -1750,12 +1750,15 @@ StScrollBar {
       border-radius: 0px 0px 12px 12px;
     }
     .notification-button {
-      padding: 7px;
-      background-color: transparentize($bg_color, 0.1);
-      box-shadow: none;
+      padding: 8px;
+      @include button(normal);
+      border: none;
       &:first-child { border-radius: 0 0 0 12px; }
       &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
+      &:hover, &focus { 
+        @include button(hover);
+        border: none;
+      }
     }
   }
   .summary-source-counter {
