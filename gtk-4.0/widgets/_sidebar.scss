@@ -118,8 +118,7 @@ stacksidebar {
 
 /*--*/
 
-placessidebar{
-	&.sidebar{
+placessidebar.sidebar, .nautilus-window .navigation-sidebar{
 		background-color: transparent;
 		background-image:linear-gradient(to right, darken($_sidebar_color, 4%) 40px,
 												$_sidebar_color 35px,$_sidebar_color 36px,
@@ -128,6 +127,9 @@ placessidebar{
 		row{
 			&.sidebar-row {
 				&.sidebar-row{
+          margin: 0;
+          padding-top: 0;
+          padding-bottom: 0;
 					.sidebar-icon {
 						margin-left:-14px;
 						margin-right: 12px;
@@ -136,20 +138,6 @@ placessidebar{
 						color: #98abb2;
 					}
 				}
-				&:hover{
-					transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-					color: rgba(0,0,0,0.76);
-					background-color: transparent; /*rgba(65,67,75,0.4); */
-					background-image:linear-gradient(to right, rgba(65,67,75,0) 40px, rgba(0,0,0,0.12) 40px,rgba(0,0,0,0.12) 97%);
-				}
-
-				&:active{
-					&:hover{
-						color: rgba(0,0,0,0.76);
-						background-color: rgba(0,0,0,0.23);
-					}
-				}
-
 				&:selected{
           color: #fff;
           label {
@@ -208,7 +196,7 @@ placessidebar{
 
 			}
 		}
-	}
+	
 	list{ 
 		background-color: transparent; 
 		&:backdrop { background-color: transparent; }
