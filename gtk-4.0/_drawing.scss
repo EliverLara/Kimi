@@ -258,7 +258,7 @@
 
 @else if $t==active-header {
   border-radius: 5px;
-  background-color: lighten($base_color,2%);
+  background-color: darken($base_color,2%);
   box-shadow: none;
   border:none;
   color: if($variant == 'light', darken($base_color, 30%), $fg_color);

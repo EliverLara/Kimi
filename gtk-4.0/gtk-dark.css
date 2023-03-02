@@ -2227,10 +2227,8 @@ GraniteWidgetsWelcome {
     background: transparent;
     border: none;
     min-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     box-shadow: none; }
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
@@ -2269,7 +2267,7 @@ GraniteWidgetsWelcome {
     headerbar button:checked,
     headerbar button:checked:backdrop {
       border-radius: 5px;
-      background-color: #37314d;
+      background-color: #2e2941;
       box-shadow: none;
       border: none;
       color: #C3C7D1; }
@@ -2429,14 +2427,14 @@ GraniteWidgetsWelcome {
   .titlebar .linked > button:active,
   headerbar .linked > button:active {
     border-radius: 5px;
-    background-color: #37314d;
+    background-color: #2e2941;
     box-shadow: none;
     border: none;
     color: #C3C7D1; }
   .titlebar .linked > button:checked,
   headerbar .linked > button:checked {
     border-radius: 5px;
-    background-color: #37314d;
+    background-color: #2e2941;
     box-shadow: none;
     border: none;
     color: #C3C7D1;
@@ -2489,12 +2487,21 @@ GraniteWidgetsWelcome {
 
 headerbar entry,
 headerbar spinbutton,
-headerbar separator {
-  margin-top: 5px;
-  margin-bottom: 5px; }
+headerbar separator:not(.sidebar),
+headerbar button,
+headerbar menubutton {
+  margin-top: 3px;
+  margin-bottom: 3px; }
+headerbar menubutton > button,
+headerbar spinbutton > button,
+headerbar splitbutton > button,
+headerbar splitbutton > menubutton,
+headerbar entry > menubutton {
+  margin-top: 0px;
+  margin-bottom: 0px; }
 headerbar switch {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 0;
+  margin-bottom: 0; }
 headerbar separator {
   background: transparent; }
 
@@ -5103,7 +5110,7 @@ button.raven-trigger {
         padding: 3px; }
         .raven .raven-header button.text-button.radio:active, .raven .raven-header button.text-button.radio:checked {
           border-radius: 5px;
-          background-color: #37314d;
+          background-color: #2e2941;
           box-shadow: none;
           border: none;
           color: #C3C7D1; }
@@ -5452,12 +5459,80 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .titlebar .path-bar-box widget > .text-button:last-child,
 .nautilus-window .titlebar .path-bar-box button:active, .nautilus-window .titlebar .path-bar-box button:checked {
   border-radius: 5px;
-  background-color: #37314d;
+  background-color: #2e2941;
   box-shadow: none;
   border: none;
   color: #C3C7D1; }
 .nautilus-window .titlebar .search {
   border: 1px solid #252134; }
+.nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
+  background: transparent;
+  height: 20px;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+  .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar .subtitle, .titlebar .nautilus-window .path-buttons-box .subtitle,
+  .nautilus-window .path-buttons-box headerbar .subtitle,
+  headerbar .nautilus-window .path-buttons-box .subtitle, .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar .subtitle,
+  .nautilus-window #NautilusPathBar headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar .subtitle {
+    color: transparent;
+    margin-right: -5px; }
+  .nautilus-window .path-buttons-box button .horizontal .dim-label, .nautilus-window .path-buttons-box button .horizontal label.separator, .nautilus-window .path-buttons-box button .horizontal .titlebar .subtitle, .titlebar .nautilus-window .path-buttons-box button .horizontal .subtitle,
+  .nautilus-window .path-buttons-box button .horizontal headerbar .subtitle,
+  headerbar .nautilus-window .path-buttons-box button .horizontal .subtitle, .nautilus-window #NautilusPathBar button .horizontal .dim-label, .nautilus-window #NautilusPathBar button .horizontal label.separator, .nautilus-window #NautilusPathBar button .horizontal .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button .horizontal .subtitle,
+  .nautilus-window #NautilusPathBar button .horizontal headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar button .horizontal .subtitle {
+    color: #C3C7D1;
+    padding: 3px 12px;
+    margin: 0; }
+  .nautilus-window .path-buttons-box button:hover, .nautilus-window .path-buttons-box button:focus, .nautilus-window #NautilusPathBar button:hover, .nautilus-window #NautilusPathBar button:focus {
+    background-color: transparent;
+    box-shadow: none; }
+    .nautilus-window .path-buttons-box button:hover .dim-label, .nautilus-window .path-buttons-box button:hover label.separator, .nautilus-window .path-buttons-box button:hover .titlebar .subtitle, .titlebar .nautilus-window .path-buttons-box button:hover .subtitle,
+    .nautilus-window .path-buttons-box button:hover headerbar .subtitle,
+    headerbar .nautilus-window .path-buttons-box button:hover .subtitle, .nautilus-window .path-buttons-box button:focus .dim-label, .nautilus-window .path-buttons-box button:focus label.separator, .nautilus-window .path-buttons-box button:focus .titlebar .subtitle, .titlebar .nautilus-window .path-buttons-box button:focus .subtitle,
+    .nautilus-window .path-buttons-box button:focus headerbar .subtitle,
+    headerbar .nautilus-window .path-buttons-box button:focus .subtitle, .nautilus-window #NautilusPathBar button:hover .dim-label, .nautilus-window #NautilusPathBar button:hover label.separator, .nautilus-window #NautilusPathBar button:hover .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:hover .subtitle,
+    .nautilus-window #NautilusPathBar button:hover headerbar .subtitle,
+    headerbar .nautilus-window #NautilusPathBar button:hover .subtitle, .nautilus-window #NautilusPathBar button:focus .dim-label, .nautilus-window #NautilusPathBar button:focus label.separator, .nautilus-window #NautilusPathBar button:focus .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:focus .subtitle,
+    .nautilus-window #NautilusPathBar button:focus headerbar .subtitle,
+    headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
+      border-radius: 5px;
+      background-color: #2e2941;
+      box-shadow: none;
+      border: none;
+      color: #C3C7D1;
+      color: #C3C7D1; }
+  .nautilus-window .path-buttons-box button:active, .nautilus-window #NautilusPathBar button:active {
+    background-color: transparent; }
+  .nautilus-window .path-buttons-box button > .horizontal > image.dim-label, .nautilus-window .path-buttons-box .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window .path-buttons-box button > .horizontal > image.subtitle,
+  .nautilus-window .path-buttons-box headerbar button > .horizontal > image.subtitle,
+  headerbar .nautilus-window .path-buttons-box button > .horizontal > image.subtitle, .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
+  .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
+  headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
+    padding: 3px 0px 3px 12px;
+    border-right: none;
+    margin-right: -6px; }
+  .nautilus-window .path-buttons-box button, .nautilus-window #NautilusPathBar button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0; }
+  .nautilus-window .path-buttons-box .current-dir label, .nautilus-window #NautilusPathBar .current-dir label {
+    border-radius: 4px;
+    padding: 1px 12px; }
+  .nautilus-window .path-buttons-box .current-dir label, .nautilus-window .path-buttons-box .current-dir image, .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
+    border-radius: 5px;
+    background-color: #2e2941;
+    box-shadow: none;
+    border: none;
+    color: #C3C7D1; }
+  .nautilus-window .path-buttons-box button.current-dir:only-child image, .nautilus-window #NautilusPathBar button.current-dir:only-child image {
+    margin-right: -6px;
+    padding: 0px 0px 0px 12px;
+    border-radius: 4px 0px 0px 4px; }
+  .nautilus-window .path-buttons-box button.current-dir:only-child label, .nautilus-window #NautilusPathBar button.current-dir:only-child label {
+    border-radius: 0px 4px 4px 0px; }
 
 .nautilus-circular-button {
   border-radius: 20px; }
@@ -6170,7 +6245,7 @@ ConversationListView .view .cell, ConversationListView iconview .cell {
     padding: 3px; }
     .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:hover:backdrop, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
       border-radius: 5px;
-      background-color: #37314d;
+      background-color: #2e2941;
       box-shadow: none;
       border: none;
       color: #C3C7D1; }
@@ -6207,7 +6282,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     color: #a67cf3; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, .thunar toolbar .path-bar-button:checked {
     border-radius: 5px;
-    background-color: #37314d;
+    background-color: #2e2941;
     box-shadow: none;
     border: none;
     color: #C3C7D1; }
@@ -6303,7 +6378,7 @@ window.thunar toolbar#location-toolbar entry {
   border: none; }
   .caja-pathbar button:hover, .caja-pathbar button:checked {
     border-radius: 5px;
-    background-color: #37314d;
+    background-color: #2e2941;
     box-shadow: none;
     border: none;
     color: #C3C7D1; }
