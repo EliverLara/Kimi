@@ -2249,7 +2249,7 @@ $base_padding: 6px;
   border-radius: 99px;
 
   &:checked { 
-    background-color: $selected_bg_color;
+    @include gradient();
     color: $selected_fg_color;
     text-shadow: none;
   }

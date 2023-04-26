@@ -2035,7 +2035,9 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
       to extend to the border */ }
   .quick-toggle:checked {
-    background-color: #45b3be;
+    background-gradient-start: #a47db4 !important;
+    background-gradient-end: #45b3be !important;
+    background-gradient-direction: horizontal;
     color: #fefefe;
     text-shadow: none; }
   .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
@@ -2073,7 +2075,7 @@ StScrollBar {
   padding: 6px 10.5px;
   border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    background-color: #a67cf3;
+    background-color: #45b3be;
     color: #fefefe;
     border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
