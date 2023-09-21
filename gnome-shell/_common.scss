@@ -1121,7 +1121,6 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 31.5em;
         border: none;
         .message-title{
           color: darken($fg_color,5%);
@@ -1156,14 +1155,14 @@ StScrollBar {
         }
 
         .message {
-          &:hover,&:focus { 
-            background-color: lighten($bg_color, 5%);
-            box-shadow: 2px 0px 0px 0px $g2 inset;
-            border-radius: 0px 7px 7px 0px;
-           }
-          border: 1px solid $borders_color;
-          border-radius: 7px;
-          background: lighten($bg_color, 2%);
+          &:hover,&:focus { @include button("hover"); }
+
+          @include button("normal");
+
+          &, &:hover, &:focus {
+            text-shadow: none;
+            box-shadow: none
+          }
         }
 
           .message-secondary-bin > .event-time {
@@ -1187,9 +1186,21 @@ StScrollBar {
           .message-content {
           //  color: darken($fg_color,20%);
             padding: 10px;
-            *:hover > StIcon,
-            *:focus > StIcon, {
-              color: $red;
+          }
+
+          // close button
+          .message-close-button {
+            color: $fg_color;
+            background-color: transparentize($fg_color, 0.8);
+            border-radius: 99px;
+
+            &:hover {
+              background-color: $orange;
+               > StIcon { color: $selected_fg_color; }
+            }
+            &:active {
+              background-color: $orange;
+              > StIcon { color: $selected_fg_color; }
             }
           }
 
