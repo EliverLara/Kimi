@@ -2741,7 +2741,7 @@ list {
 
 row {
   background-color: transparent;
-  border-color: #252134; }
+  border-color: #0e0d0f; }
   row:hover {
     transition: none; }
   row:backdrop {
@@ -5642,21 +5642,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*********
  * Panel *
  ********/
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out; }
-  .panel.maximized {
-    background-color: black; }
-  .panel.translucent {
-    background-color: rgba(0, 0, 0, 0.5); }
-  .panel.color-light.translucent {
-    background-color: rgba(195, 199, 209, 0.85); }
-
-menubar.panel,
-.panel menubar {
-  box-shadow: none;
-  border: none; }
-
 .composited-indicator > revealer,
 .composited-indicator > revealer image,
 .composited-indicator > revealer label,
