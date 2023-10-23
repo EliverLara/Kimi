@@ -5645,21 +5645,6 @@ panel-toplevel.background button:not(#tasklist-button) {
 /*********
  * Panel *
  ********/
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out; }
-  .panel.maximized {
-    background-color: #1a191d; }
-  .panel.translucent {
-    background-color: rgba(26, 25, 29, 0.5); }
-  .panel.color-light.translucent {
-    background-color: rgba(195, 199, 209, 0.85); }
-
-menubar.panel,
-.panel menubar {
-  box-shadow: none;
-  border: none; }
-
 .composited-indicator > revealer,
 .composited-indicator > revealer image,
 .composited-indicator > revealer label,
