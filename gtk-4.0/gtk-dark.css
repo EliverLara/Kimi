@@ -5592,10 +5592,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: rgba(50, 45, 71, 0.5); }
     .nautilus-window .sidebar .list-row:hover:active {
       background-color: rgba(166, 124, 243, 0.9); }
-.nautilus-window.background {
-  background-color: rgba(44, 39, 62, 0.95); }
-  .nautilus-window.background:backdrop {
-    background-color: rgba(44, 39, 62, 0.95); }
 .nautilus-window notebook > stack:only-child {
   background-color: #37314d; }
   .nautilus-window notebook > stack:only-child:backdrop {
