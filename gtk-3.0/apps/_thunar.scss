@@ -12,7 +12,7 @@
   scrolledwindow.sidebar treeview.view {
     background: darken($_sidebar_color, 2%);
     padding: 1.5px;
-    color: #98abb2;
+    color: $fg_color;
   }
   
   /* path-bar of thunar */

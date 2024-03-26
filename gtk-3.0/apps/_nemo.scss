@@ -5,7 +5,7 @@
         -GtkTreeView-vertical-separator: 10; 
         .view.cell,
         iconview.cell {
-            &:hover { background: transparentize(darken($_sidebar_color, 3%), 0.3); }
+            &:hover { background: transparentize(lighten($_sidebar_color, 5%), 0.3); }
             &:selected {
                 background: $selected_bg_color;
                 color: $selected_fg_color;
@@ -16,7 +16,7 @@
     .sidebar {
         background-color: $_sidebar_color; 
         .view, .iconview, row {
-            color: #98abb2;
+            color: $fg_color;
             background-color: transparent;
         }
     }

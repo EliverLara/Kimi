@@ -6116,7 +6116,7 @@ ConversationListView {
   -GtkTreeView-vertical-separator: 10; }
   .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:hover {
-    background: rgba(15, 15, 16, 0.7); }
+    background: rgba(35, 35, 37, 0.7); }
   .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:selected {
     background: #45b3be;
@@ -6124,7 +6124,7 @@ ConversationListView {
 .nemo-window .sidebar {
   background-color: #171718; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #F3F4F6;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
@@ -6177,7 +6177,7 @@ ConversationListView {
 scrolledwindow.sidebar treeview.view {
   background: #121213;
   padding: 1.5px;
-  color: #98abb2; }
+  color: #F3F4F6; }
 
 /* path-bar of thunar */
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, .thunar toolbar .path-bar-button {
@@ -6235,12 +6235,12 @@ window.thunar toolbar#location-toolbar entry {
   .caja-side-pane widget .vertical {
     background: #171718;
     padding: 3px 2px;
-    color: #98abb2; }
+    color: #F3F4F6; }
     .caja-side-pane treeview.view:hover,
     .caja-side-pane textview.view text:hover,
     .caja-side-pane viewport.frame:hover,
     .caja-side-pane widget .vertical:hover {
-      background-color: rgba(18, 18, 19, 0.95); }
+      background-color: rgba(35, 35, 37, 0.95); }
     .caja-side-pane treeview.view:selected,
     .caja-side-pane textview.view text:selected,
     .caja-side-pane viewport.frame:selected,
