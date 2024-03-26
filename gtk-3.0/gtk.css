@@ -6178,7 +6178,7 @@ ConversationListView {
   -GtkTreeView-vertical-separator: 10; }
   .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:hover {
-    background: rgba(50, 46, 72, 0.7); }
+    background: rgba(68, 62, 97, 0.7); }
   .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:selected {
     background: #a67cf3;
@@ -6186,7 +6186,7 @@ ConversationListView {
 .nemo-window .sidebar {
   background-color: #393451; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #ffffff;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
@@ -6239,7 +6239,7 @@ ConversationListView {
 scrolledwindow.sidebar treeview.view {
   background: #35304b;
   padding: 1.5px;
-  color: #98abb2; }
+  color: #ffffff; }
 
 /* path-bar of thunar */
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, .thunar toolbar .path-bar-button {
@@ -6263,11 +6263,14 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   box-shadow: none; }
 
 /* thunar sidepane */
-window.thunar paned > scrolledwindow treeview.view:selected, window.thunar paned > scrolledwindow treeview.view:hover {
-  background: #a67cf3;
-  color: #fefefe;
-  border-radius: 0;
-  box-shadow: none; }
+.thunar scrolledwindow.sidebar treeview.view {
+  background: #35304b;
+  padding: 1.5px; }
+  .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
+    background: rgba(166, 124, 243, 0.7);
+    color: #fefefe;
+    border-radius: 0;
+    box-shadow: none; }
 
 window.thunar toolbar#location-toolbar entry {
   border-radius: 10px; }
@@ -6297,24 +6300,18 @@ window.thunar toolbar#location-toolbar entry {
   .caja-side-pane widget .vertical {
     background: #393451;
     padding: 3px 2px;
-    color: #98abb2; }
+    color: #ffffff; }
     .caja-side-pane treeview.view:hover,
     .caja-side-pane textview.view text:hover,
     .caja-side-pane viewport.frame:hover,
     .caja-side-pane widget .vertical:hover {
-      background-color: rgba(53, 48, 75, 0.95); }
+      background-color: rgba(68, 62, 97, 0.95); }
     .caja-side-pane treeview.view:selected,
     .caja-side-pane textview.view text:selected,
     .caja-side-pane viewport.frame:selected,
     .caja-side-pane widget .vertical:selected {
-      color: #a67cf3;
-      background: #584e7b; }
-      .caja-side-pane treeview.view:selected:hover,
-      .caja-side-pane textview.view text:selected:hover,
-      .caja-side-pane viewport.frame:selected:hover,
-      .caja-side-pane widget .vertical:selected:hover {
-        background: #584e7b;
-        color: #fff; }
+      background: #a67cf3;
+      color: #fefefe; }
 
 /**************
 * Caja pathbar *

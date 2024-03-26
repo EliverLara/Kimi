@@ -31,17 +31,13 @@
     widget .vertical {
       background: $_sidebar_color;
       padding: 3px 2px;
-      color: #98abb2;
+      color: #ffffff;
       &:hover {
-        background-color: transparentize(darken($_sidebar_color, 2%), 0.05);
+        background-color: transparentize(lighten($_sidebar_color, 5%), 0.05);
       }
       &:selected {
-        color: $selected_bg_color;
-        background:#584e7b;
-        &:hover {
-          background: #584e7b;
-          color: #fff;
-        }
+        background: $selected_bg_color;
+        color: $selected_fg_color;
       }
     }
   }

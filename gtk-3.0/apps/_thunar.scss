@@ -12,7 +12,7 @@
   scrolledwindow.sidebar treeview.view {
     background: darken($_sidebar_color, 2%);
     padding: 1.5px;
-    color: #98abb2;
+    color: #ffffff;
   }
   
   /* path-bar of thunar */
@@ -31,15 +31,17 @@
     box-shadow: none;
   }
   
-  /* thunar sidepane */
-  window.thunar paned > scrolledwindow treeview.view {
-    &:selected, &:hover {
-        background: $selected_bg_color;
-        color: $selected_fg_color;
-        border-radius: 0;
-        box-shadow: none;
-    }
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view {
+  background: darken($_sidebar_color, 2%);
+  padding: 1.5px; 
+  &:hover, &:selected {
+      background: transparentize($selected_bg_color, 0.3);
+      color: $selected_fg_color;
+      border-radius: 0;
+      box-shadow: none;
   }
+}
   
   window.thunar toolbar#location-toolbar entry {
     border-radius: 10px;
