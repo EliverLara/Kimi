@@ -56,7 +56,10 @@
     @include _shadows($depth);
 
   }
-  @if $t==focus { @include _shadows($depth); }
+  @if $t==focus { 
+    @include _shadows($depth); 
+    box-shadow: none !important;
+  }
   @if $t==hover { }
   @if $t==insensitive {
     color: $insensitive_fg_color;
