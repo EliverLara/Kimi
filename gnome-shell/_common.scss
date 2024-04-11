@@ -704,6 +704,7 @@ $slider_size: 16px;
   .switcher-list .item-box {
     padding: 8px;
     border-radius: 4px;
+    background-color: transparent;
   }
 
   .switcher-list .item-box:outlined {
@@ -1064,6 +1065,7 @@ $slider_size: 16px;
     }
 
     .calendar-day-heading {  //day of week heading
+      background-color: transparent;
       color: darken($fg_color, 10%);
       margin-top: 1em;
       font-size: 70%;
@@ -1426,7 +1428,7 @@ $slider_size: 16px;
 }
 
 #overviewGroup {
-  background-color: $_bubble_bg_color;
+  background-color: $bg_color;
 }
 
 .overview-controls {
@@ -1639,6 +1641,7 @@ $slider_size: 16px;
     transition-duration: 100ms;
     text-align: center;
     box-shadow: none;
+    border-radius: 18px;
   }
 
   /* App Folders */

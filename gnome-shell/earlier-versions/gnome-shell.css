@@ -105,7 +105,6 @@ StEntry {
   selection-background-color: #45b3be;
   selected-color: #fefefe; }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     box-shadow: none !important; }
   StEntry:insensitive {
     color: #6f7077;
