@@ -1341,6 +1341,9 @@ StScrollBar {
   border: 1px solid #121213;
   -x-offset: 8px; }
 
+#dash .app-well-app-running-dot, #dash .app-grid-running-dot {
+  margin-bottom: 14px; }
+
 /* App Vault/Grid */
 .icon-grid {
   spacing: 30px;
