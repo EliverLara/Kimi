@@ -4040,7 +4040,7 @@ treeview ~ scrollbar.vertical {
     padding: 8px 12px;
     transition: all .12s ease-in; }
     .sidebar row label {
-      color: #98abb2; }
+      color: #ffffff; }
     .sidebar row:selected {
       color: #fefefe; }
       .sidebar row:selected:backdrop {
@@ -4053,7 +4053,7 @@ treeview ~ scrollbar.vertical {
   .sidebar.source-list {
     background: #393451;
     padding: 4px 0px;
-    color: #98abb2; }
+    color: #ffffff; }
     .sidebar.source-list.view, iconview.sidebar.source-list {
       transition: all .12s ease-in; }
       .sidebar.source-list.view:selected, iconview.sidebar.source-list:selected {
@@ -4091,7 +4091,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
     padding-top: 0;
     padding-bottom: 0;
     padding: 1px 11px;
-    color: #98abb2; }
+    color: #ffffff; }
     placessidebar.sidebar row.sidebar-row.sidebar-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row label {
       padding-left: 8px; }
     placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row .sidebar-icon {
@@ -4099,7 +4099,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
       margin-right: 12px;
       padding-left: 14px;
       padding-right: 12px;
-      color: #98abb2; }
+      color: #ffffff; }
   placessidebar.sidebar row.sidebar-row:hover, placessidebar.sidebar row.sidebar-row:active, .nautilus-window .navigation-sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:active {
     background-image: linear-gradient(to right, #393451 40px, #4f4870 40px, #4f4870 97%); }
   placessidebar.sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected {

@@ -34,7 +34,7 @@
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
-      color: #98abb2;
+      color: #ffffff;
     }
     &:selected{
       color: $selected_fg_color;
@@ -59,7 +59,7 @@
     &.source-list{
       background: $_sidebar_color;
       padding: 4px 0px;
-      color: #98abb2;
+      color: #ffffff;
       &.view{
         transition: all .12s ease-in;
         &:selected {
@@ -137,9 +137,9 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar{
 						margin-right: 12px;
 						padding-left: 14px;
 						padding-right: 12px;
-						color: #98abb2;
+						color: #ffffff;
 					}
-          color: #98abb2;
+          color: #ffffff;
 				}
         &:hover, &:active {
 
