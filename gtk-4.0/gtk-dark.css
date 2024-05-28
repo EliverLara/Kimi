@@ -2655,7 +2655,7 @@ levelbar.vertical trough > block {
   min-width: 5px;
   border-radius: 5px; }
 levelbar.vertical.discrete > trough > block {
-  min-width: -2px;
+  min-width: 2px;
   margin: 1px 0;
   min-height: 32px; }
 levelbar > trough {
@@ -5652,7 +5652,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border: 1px solid #0e0d0f; }
 .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
   background: transparent;
-  height: 20px;
   margin-top: 7px;
   margin-bottom: 7px; }
   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar .subtitle, .titlebar .nautilus-window .path-buttons-box .subtitle,
