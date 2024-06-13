@@ -82,6 +82,16 @@
     .search {
       border: 1px solid $borders_color;
     }
+    .path-buttons-box {
+      .current-dir:hover {
+        background-color: transparent;
+      }
+      .current-dir label {
+        @include button(hover-header);
+        padding: 3px 12px;
+        border-radius: 3px;
+      }
+    }
 
   }
 }
