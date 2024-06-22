@@ -5773,6 +5773,16 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #a67cf3; }
 
+/*******************
+ * Calendar events *
+********************/
+.color-light.timed label, .color-light .event-popover label {
+  color: #C3C7D1;
+  opacity: 1; }
+.color-light label {
+  color: #C3C7D1;
+  opacity: 1; }
+
 .xfce4-panel.panel {
   background-color: #1a191d;
   text-shadow: none;
