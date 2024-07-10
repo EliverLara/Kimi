@@ -5562,11 +5562,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   background-color: rgba(0, 0, 0, 0); }
   .xfce4-panel.panel button.flat:hover {
     border: none;
-    background-color: #404040; }
+    background-color: #262626; }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
     color: #fefefe;
-    background-color: #333333;
-    border-bottom: 2px solid #45b3be; }
+    background-color: #1a1a1a;
+    box-shadow: 0px -2px #45b3be inset; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
