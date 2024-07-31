@@ -581,18 +581,13 @@ StScrollBar {
 /* OSD */
 .osd-window {
   text-align: center;
-  font-weight: bold;
-  spacing: 1em;
-  margin: 32px;
-  min-width: 64px;
-  min-height: 64px; }
+  font-weight: bold; }
   .osd-window .osd-monitor-label {
     font-size: 3em; }
   .osd-window .level {
     height: 0.4em;
     border-radius: 0.3em;
     color: #C3C7D1;
-    border: 1px solid #121213;
     -barlevel-height: 0.4em;
     -barlevel-background-color: #37353e;
     -barlevel-active-background-color: #a67cf3;
@@ -701,7 +696,7 @@ StScrollBar {
   color: #C3C7D1;
   background-color: rgba(26, 25, 29, 0.95);
   border: 1px solid #121213;
-  border-radius: 5px;
+  border-radius: 18px;
   box-shadow: 0px 0px 7px #121213;
   padding: 12px; }
 
