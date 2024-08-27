@@ -3,66 +3,43 @@
  **********/
 switch {
   font-size: 1px;
-  font-weight: bold;
-  outline-offset: -4px;
-  transition: all 200ms ease-in;
+  min-width: 43px;
+  min-height: 26px;
+  background-size: 43px 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"),url("../assets/switch-off@2.svg"));
 
-  border: none;
-  border-radius: 14px;
-  color: transparent;
-  padding: 2.3px 0px;
-
-  background:  linear-gradient(to right, #859398, #859398);
- // border: 1px solid rgba(170, 170, 170, 0.4);
-  //box-shadow: 0px 2px 3px rgba(138, 138, 138, 0.753);
   &:disabled {
-    background-color: $insensitive_bg_color;
+    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"),url("../assets/switch-insensitive@2.svg"));
+    slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-insensitive.svg"),url("../assets/switch-slider-insensitive@2.svg"));
+    }
   }
 
-  &:backdrop {
-    background-color: $backdrop_bg_color;
-    transition: $backdrop_transition;
-
-    &:disabled { background-color: $insensitive_bg_color; }
+  &, & slider {
+    outline-color: transparent;
+    color: transparent;
+    border: none;
+    box-shadow: none; 
   }
-
-
+  
   &:active,
   &:checked {
-   // border: 1px solid $teal;
-   background:  linear-gradient(to right, $purple, $selected_bg_color);
-    slider{
-      background: #fff;
-    }
-    &:backdrop {
-      //border: 1px solid $teal;
-      background:  linear-gradient(to right, darken($purple, 5%), darken($selected_bg_color, 5%));
-      slider {
-        &:backdrop {
-          box-shadow:none;
-          background-color:transparentize($base_color, 0.1);
-          border:none;
-        }
-      }
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"),url("../assets/switch-on@2.svg"));
+    slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"),url("../assets/switch-slider-on@2.svg"));
     }
   }
 
   // Handle
   slider {
-    padding:2px;
-    margin: 0 2.3px;
-    min-width: 12px;
-    min-height: 12px;
-
-    border-radius: 100%;
-    transition: $button_transition;
-    background-color: lighten(#859398, 20%);
-
-    &:backdrop {
-      padding:2px;
-      box-shadow:none;
-      background-color:$base_color;
-    }
+    min-width: 1px;
+    min-height: 1px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"),url("../assets/switch-slider-off@2.svg"));
   }
 
   &:checked slider { }

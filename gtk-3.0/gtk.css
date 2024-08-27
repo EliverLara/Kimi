@@ -4167,43 +4167,32 @@ spinner {
  **********/
 switch {
   font-size: 1px;
-  font-weight: bold;
-  outline-offset: -4px;
-  transition: all 200ms ease-in;
-  border: none;
-  border-radius: 14px;
-  color: transparent;
-  padding: 2.3px 0px;
-  background: linear-gradient(to right, #859398, #859398); }
+  min-width: 43px;
+  min-height: 26px;
+  background-size: 43px 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off@2.svg")); }
   switch:disabled {
-    background-color: #1c1b1e; }
-  switch:backdrop {
-    background-color: #1a191d;
-    transition: 200ms ease-out; }
-    switch:backdrop:disabled {
-      background-color: #1c1b1e; }
+    background-image: -gtk-scaled(url("../assets/switch-insensitive.svg"), url("../assets/switch-insensitive@2.svg")); }
+    switch:disabled slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-insensitive.svg"), url("../assets/switch-slider-insensitive@2.svg")); }
+  switch, switch slider {
+    outline-color: transparent;
+    color: transparent;
+    border: none;
+    box-shadow: none; }
   switch:active, switch:checked {
-    background: linear-gradient(to right, #a47db4, #45b3be); }
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on@2.svg")); }
     switch:active slider, switch:checked slider {
-      background: #fff; }
-    switch:active:backdrop, switch:checked:backdrop {
-      background: linear-gradient(to right, #996dab, #3ca3ad); }
-      switch:active:backdrop slider:backdrop, switch:checked:backdrop slider:backdrop {
-        box-shadow: none;
-        background-color: rgba(30, 30, 32, 0.9);
-        border: none; }
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.svg")); }
   switch slider {
-    padding: 2px;
-    margin: 0 2.3px;
-    min-width: 12px;
-    min-height: 12px;
-    border-radius: 100%;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: #bcc4c7; }
-    switch slider:backdrop {
-      padding: 2px;
-      box-shadow: none;
-      background-color: #1e1e20; }
+    min-width: 1px;
+    min-height: 1px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.svg")); }
   switch trough:active, switch trough:checked {
     background-color: #45b3be; }
     switch trough:active:backdrop, switch trough:checked:backdrop {
