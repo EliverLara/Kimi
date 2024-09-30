@@ -29,18 +29,18 @@ stage {
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
-    color: #a67cf3;
-    background-color: rgba(26, 25, 29, 0.95);
-    border: 1px solid #121213;
-    text-shadow: none;
-    icon-shadow: none; }
   .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     background-color: #2a2a2d;
     color: #fefefe;
     border: 1px solid #121213;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #fefefe;
+    background-color: #a67cf3;
+    border: 1px solid #121213;
+    text-shadow: none;
+    icon-shadow: none; }
 
 .button {
   border-radius: 6px;
@@ -62,8 +62,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: #a67cf3;
-    background-color: rgba(26, 25, 29, 0.95);
+    color: #fefefe;
+    background-color: #a67cf3;
     border: 1px solid #121213;
     text-shadow: none;
     icon-shadow: none; }
@@ -1732,8 +1732,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: #a67cf3;
-    background-color: rgba(26, 25, 29, 0.95);
+    color: #fefefe;
+    background-color: #a67cf3;
     border: 1px solid #121213;
     text-shadow: none;
     icon-shadow: none; }
@@ -1823,7 +1823,7 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: #a67cf3;
+        color: #fefefe;
         background-color: #a67cf3;
         border: 1px solid #121213;
         text-shadow: none;
