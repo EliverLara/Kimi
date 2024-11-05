@@ -34,7 +34,7 @@
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
-      color: $fg_color;
+      color: #ffffff;
     }
     &:selected{
       color: $selected_fg_color;
@@ -59,7 +59,7 @@
     &.source-list{
       background: $_sidebar_color;
       padding: 4px 0px;
-      color: $fg_color;
+      color: #ffffff;
       &.view{
         transition: all .12s ease-in;
         &:selected {
@@ -133,8 +133,9 @@ placessidebar{
 						margin-right: 12px;
 						padding-left: 14px;
 						padding-right: 12px;
-						color: $fg_color;
+						color: #ffffff;
 					}
+          color: #ffffff;
 				}
 				&:hover{
 					transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -212,7 +213,5 @@ placessidebar{
 	list{ 
 		background-color: transparent; 
 		&:backdrop { background-color: transparent; }
-	}
-  
-  
+	} 
 }
