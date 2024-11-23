@@ -3,7 +3,7 @@
  ***************/
 %titlebar,
 headerbar {
-  padding: 0px 13px;
+  padding: 0px 6px;
   min-height: 34px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
@@ -305,7 +305,9 @@ window {
   }
 }
 
-.nautilus-window .sidebar-pane .top-bar headerbar {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.nautilus-window, #NautilusFileChooser {
+  .sidebar-pane .top-bar headerbar {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
 }
