@@ -167,18 +167,7 @@ headerbar {
   .linked > button:backdrop { 
     @extend %linked-header; 
   }
-  .linked:not(.vertical) > entry { 
-    border-color:$borders_color;
-    box-shadow: none;
-    background: lighten($base_color, 3%); 
-    color: $headerbar_fg_color;
-    caret-color: $headerbar_fg_color;
-    border-radius: 15px;
-    *{ color: $headerbar_fg_color; }
-    &:focus {
-      border-color: entry_focus_border();
-    }
-  }
+
   // End reset style
 
   &.selection-mode {

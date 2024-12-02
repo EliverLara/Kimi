@@ -2486,20 +2486,6 @@ GraniteWidgetsWelcome {
     headerbar .linked > button:checked:backdrop,
     headerbar .linked > button:checked:backdrop label {
       color: #8b8b8b; }
-  .titlebar .linked:not(.vertical) > entry,
-  headerbar .linked:not(.vertical) > entry {
-    border-color: #0e0d0f;
-    box-shadow: none;
-    background: #252528;
-    color: #F3F4F6;
-    caret-color: #F3F4F6;
-    border-radius: 15px; }
-    .titlebar .linked:not(.vertical) > entry *,
-    headerbar .linked:not(.vertical) > entry * {
-      color: #F3F4F6; }
-    .titlebar .linked:not(.vertical) > entry:focus,
-    headerbar .linked:not(.vertical) > entry:focus {
-      border-color: #36919a; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
