@@ -74,7 +74,7 @@
  // Selected dir
   .current-dir  {
     label { 
-      border-radius: 4px;
+      border-radius: 6px;
       padding: 1px 12px;
     }
 
@@ -87,8 +87,8 @@
     image {
       margin-right: -6px;
       padding: 0px 0px 0px 12px;
-      border-radius: 4px 0px 0px 4px;
+      border-radius: 6px 0px 0px 6px;
     }
-    label { border-radius:0px 4px 4px 0px; }
+    label { border-radius:0px 6px 6px 0px; }
   }
 }

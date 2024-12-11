@@ -258,7 +258,7 @@
 }
 
 @else if $t==active-header {
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: darken($base_color,2%);
   box-shadow: none;
   border:none;

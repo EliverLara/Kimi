@@ -83,7 +83,7 @@ headerbar {
         min-height: 14px;
         margin-top: 5px;
         margin-bottom: 5px;
-        border-radius: 5px;
+        border-radius: 6px;
         @include button(normal, $b_color, white);
         box-shadow: none;
 
@@ -98,7 +98,7 @@ headerbar {
 
         &:backdrop {
           @include button(backdrop, $b_color, white);
-          border-radius: 3px;
+          border-radius: 6px;
         }
 
         &:backdrop:disabled { @include button(backdrop-insensitive, $b_color, white); }
@@ -156,7 +156,7 @@ headerbar {
   .linked > button:checked{
     @extend %linked-header;
     @include button(active-header);
-    border-radius: 5px;
+    border-radius: 6px;
     &:backdrop {
       &, label {
         color: if($variant == 'light', darken($base_color, 30%), $fg_color);
