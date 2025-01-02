@@ -120,6 +120,6 @@ banner revealer widget {
   padding: 5px;
   button {
     @include button(undecorated);
-    background-color: transparentize(#fff, 0.5);
+    background-color: transparentize(#000, 0.5);
   }
 }
