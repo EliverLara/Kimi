@@ -48,6 +48,7 @@ row {
     button:not(.image-button){
       background-color: transparent;
     }
+    &.button { @include button(normal);}
   }
 
   &:selected { @extend %selected_items; }
@@ -148,3 +149,5 @@ columnview.complex {
     }
   }
 }
+
+.boxed-list-separate { &, &:backdrop { background-color: transparent; } }
