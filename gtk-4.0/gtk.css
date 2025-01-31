@@ -2411,6 +2411,9 @@ window.csd > .titlebar:not(headerbar) {
 .sidebar-pane .top-bar, .sidebar-pane .top-bar headerbar, .content-pane .top-bar, .content-pane .top-bar headerbar {
   background-color: #fff; }
 
+.top-bar {
+  background-color: #0d0d0f; }
+
 /**************
  * GtkInfoBar *
  **************/
@@ -2613,8 +2616,8 @@ row.activatable button:not(.image-button) {
   background-color: transparent; }
 row.activatable.button {
   font-weight: normal;
-  color: #31363D;
-  background-color: #f8f8f8;
+  color: #F3F4F6;
+  background-color: #252528;
   text-shadow: none;
   box-shadow: none; }
 
