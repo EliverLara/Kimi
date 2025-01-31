@@ -2412,7 +2412,7 @@ window.csd > .titlebar:not(headerbar) {
   background-color: #fff; }
 
 .top-bar {
-  background-color: #0d0d0f; }
+  background-color: #fff; }
 
 /**************
  * GtkInfoBar *
@@ -2616,8 +2616,8 @@ row.activatable button:not(.image-button) {
   background-color: transparent; }
 row.activatable.button {
   font-weight: normal;
-  color: #F3F4F6;
-  background-color: #252528;
+  color: #31363D;
+  background-color: #f8f8f8;
   text-shadow: none;
   box-shadow: none; }
 
