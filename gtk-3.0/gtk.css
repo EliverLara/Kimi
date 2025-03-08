@@ -5564,6 +5564,32 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
     background-color: #45b3be; }
 
+#XfceNotifyWindow {
+  background-color: black;
+  border-radius: 12px;
+  border-width: 1px;
+  border: 1px solid #0e0d0f;
+  color: #C3C7D1;
+  padding: 40px; }
+  #XfceNotifyWindow:hover, #XfceNotifyWindow:focus {
+    background-color: #1a1a1a; }
+  #XfceNotifyWindow label, #XfceNotifyWindow image {
+    color: #C3C7D1; }
+  #XfceNotifyWindow button {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+    #XfceNotifyWindow button:hover {
+      color: #F3F4F6;
+      outline-color: rgba(243, 244, 246, 0.3);
+      background-color: #45b3be;
+      text-shadow: none; }
+      #XfceNotifyWindow button:hover label {
+        color: #fefefe; }
+
 /********
  * Gala *
  *******/
