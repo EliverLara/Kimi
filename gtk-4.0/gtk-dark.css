@@ -3036,9 +3036,9 @@ tabbar:backdrop .box > .start-action,
 tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
-  background-color: #302b44;
+  background-color: #1a191d;
   padding: 0px;
-  color: #C3C7D1; }
+  color: #F3F4F6; }
   tabbar tabbox > tabboxchild {
     margin: 0 -3px;
     border-radius: 0; }
@@ -3059,10 +3059,10 @@ tabbar tabbox {
     tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
     tabbar tabbox > tabboxchild > tab:checked,
     tabbar tabbox > tabboxchild > tab:selected {
-      background: linear-gradient(to right, #a67cf3, #E100FF) left bottom #37314d no-repeat;
+      background: linear-gradient(to right, #45b3be, #E100FF) left bottom #232325 no-repeat;
       background-size: 100% 2px;
       border: none;
-      color: #C3C7D1; }
+      color: #F3F4F6; }
 
 /*********
  * Paned *
