@@ -3031,6 +3031,39 @@ notebook button.flat {
   notebook button.flat:hover, notebook button.flat:active, notebook button.flat:checked {
     background: #45b3be; }
 
+tabbar:backdrop .box > scrolledwindow,
+tabbar:backdrop .box > .start-action,
+tabbar:backdrop .box > .end-action {
+  filter: opacity(1); }
+tabbar tabbox {
+  background-color: #EAEAEA;
+  padding: 0px;
+  color: #31363d; }
+  tabbar tabbox > tabboxchild {
+    margin: 0 -3px;
+    border-radius: 0; }
+  tabbar tabbox > tab,
+  tabbar tabbox > tabboxchild > tab {
+    border-radius: 0;
+    transition: none; }
+    tabbar tabbox > tab button.flat,
+    tabbar tabbox > tabboxchild > tab button.flat {
+      padding: 0;
+      margin: 4px;
+      min-width: 20px;
+      min-height: 20px;
+      border-radius: 10px; }
+      tabbar tabbox > tab button.flat:hover,
+      tabbar tabbox > tabboxchild > tab button.flat:hover {
+        background-color: #f7a085; }
+    tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
+    tabbar tabbox > tabboxchild > tab:checked,
+    tabbar tabbox > tabboxchild > tab:selected {
+      background: linear-gradient(to right, #a67cf3, #E100FF) left bottom whitesmoke no-repeat;
+      background-size: 100% 2px;
+      border: none;
+      color: #31363d; }
+
 /*********
  * Paned *
  *********/
