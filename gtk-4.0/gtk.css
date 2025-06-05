@@ -1092,7 +1092,7 @@ toggle-group {
   toggle-group toggle {
     padding: 0 4px; }
     toggle-group toggle:checked {
-      background-color: #a67cf3; }
+      background-color: #45b3be; }
       toggle-group toggle:checked, toggle-group toggle:checked label {
         color: #fefefe; }
 
