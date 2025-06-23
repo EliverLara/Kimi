@@ -4077,8 +4077,7 @@ placessidebar {
     placessidebar row.sidebar-row.sidebar-row {
       margin: 0;
       padding-top: 0;
-      padding-bottom: 0;
-      color: #ffffff; }
+      padding-bottom: 0; }
       placessidebar row.sidebar-row.sidebar-row label {
         padding-left: 8px; }
       placessidebar row.sidebar-row.sidebar-row .sidebar-icon {
@@ -4086,6 +4085,8 @@ placessidebar {
         margin-right: 12px;
         padding-left: 14px;
         padding-right: 12px; }
+      placessidebar row.sidebar-row.sidebar-row, placessidebar row.sidebar-row.sidebar-row label {
+        color: #ffffff; }
     placessidebar row.sidebar-row:hover, placessidebar row.sidebar-row:active {
       background-image: linear-gradient(to right, #393451 40px, #4f4870 40px, #4f4870 97%); }
     placessidebar row.sidebar-row:selected {
