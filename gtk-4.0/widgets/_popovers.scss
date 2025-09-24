@@ -113,7 +113,7 @@ popover.menu {
 
   & > arrow,
   &.background > contents {
-    background-color: $popover_bg_color;
+    background: $popover_bg_color;
     padding: 5px;
     color: $fg_color;
     .view {
