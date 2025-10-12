@@ -207,11 +207,13 @@
   @if $t==rounded {
     box-shadow: none;
     color: white;
+    label { color: #fff; }
     background: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
       color: white;
+      label { color: #fff; }
       background: $destructive_bg_color; 
     }
   
