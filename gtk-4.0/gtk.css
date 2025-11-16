@@ -4134,18 +4134,20 @@ placessidebar {
     placessidebar list:backdrop {
       background-color: transparent; }
 
-.sidebar-pane .bottom-bar {
-  background-color: #393451; }
-  .sidebar-pane .bottom-bar button {
-    background-color: transparent;
-    background-image: none;
-    border: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none; }
-    .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
+.sidebar-pane {
+  background-color: #fff; }
+  .sidebar-pane .bottom-bar {
+    background-color: #393451; }
+    .sidebar-pane .bottom-bar button {
       background-color: transparent;
-      color: #fff; }
+      background-image: none;
+      border: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none; }
+      .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
+        background-color: transparent;
+        color: #fff; }
 
 spinbutton {
   font-feature-settings: "tnum"; }
@@ -5708,8 +5710,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*******************
  * Calendar sidebar *
 ********************/
-datechooser, datechooser:backdrop {
-  background-color: #fff; }
 datechooser .circular.day.text-button {
   padding: 6px;
   border-radius: 50%;
@@ -5726,15 +5726,29 @@ datechooser .circular.day.text-button {
     background-color: #a67cf3;
     text-shadow: none;
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #8e9094; }
+datechooser .weeknum {
+  background-color: #fafafa; }
+datechooser .current-week {
+  background-color: rgba(142, 144, 148, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
-  agenda-view list.background, agenda-view list.background:backdrop {
-    background-color: #fff; }
   agenda-view list.background .caption-heading, agenda-view list.background .dim-label.no-events, agenda-view list.background label.no-events.separator, agenda-view list.background .titlebar .no-events.subtitle, .titlebar agenda-view list.background .no-events.subtitle,
   agenda-view list.background headerbar .no-events.subtitle,
   headerbar agenda-view list.background .no-events.subtitle {
     color: #31363D; }
+
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
+  background-color: #fff; }
+
+popover datechooser {
+  background-color: transparent; }
 
 .xfce4-panel.panel {
   background-color: #1a191d;
