@@ -5747,7 +5747,8 @@ agenda-view list.background:backdrop,
 .calendar-list:backdrop {
   background-color: #fff; }
 
-popover datechooser {
+popover datechooser,
+popover .calendars-list {
   background-color: transparent; }
 
 .xfce4-panel.panel {

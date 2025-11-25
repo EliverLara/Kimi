@@ -5738,7 +5738,8 @@ agenda-view list.background:backdrop,
 .calendar-list:backdrop {
   background-color: #242033; }
 
-popover datechooser {
+popover datechooser,
+popover .calendars-list {
   background-color: transparent; }
 
 .xfce4-panel.panel {
