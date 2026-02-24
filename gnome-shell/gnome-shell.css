@@ -2092,7 +2092,7 @@ StScrollBar {
     text-shadow: none; }
     .quick-toggle:checked:hover {
       background-gradient-start: rgba(164, 125, 180, 0.8) !important;
-      background-gradient-end: rgba(166, 124, 243, 0.9) !important;
+      background-gradient-end: rgba(69, 179, 190, 0.9) !important;
       background-gradient-direction: horizontal; }
   .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
     border: none; }
@@ -2133,7 +2133,7 @@ StScrollBar {
     color: #fefefe;
     border-width: 0; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover, .quick-menu-toggle .quick-toggle-menu-button:checked:hover, .quick-toggle-has-menu .quick-toggle-arrow:checked:hover, .quick-toggle-has-menu .quick-toggle-menu-button:checked:hover {
-      background-color: rgba(166, 124, 243, 0.9); }
+      background-color: rgba(69, 179, 190, 0.9); }
   .quick-menu-toggle .quick-toggle-arrow:ltr, .quick-menu-toggle .quick-toggle-menu-button:ltr, .quick-toggle-has-menu .quick-toggle-arrow:ltr, .quick-toggle-has-menu .quick-toggle-menu-button:ltr {
     border-radius: 0 99px 99px 0; }
   .quick-menu-toggle .quick-toggle-arrow:rtl, .quick-menu-toggle .quick-toggle-menu-button:rtl, .quick-toggle-has-menu .quick-toggle-arrow:rtl, .quick-toggle-has-menu .quick-toggle-menu-button:rtl {
