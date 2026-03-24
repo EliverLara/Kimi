@@ -1603,34 +1603,49 @@ $slider_size: 16px;
     }
   }
 
-  .app-well-app,
-  .app-well-app.app-folder,
-  .show-apps,
-  .grid-search-result,
-  .overview-tile,
-  .dash-item-container .overview-tile {
-    background-color: transparent;
-    border: none;
-    & .overview-icon {
-      @extend %icon_tile;
-    }
+.app-well-app,
+.app-well-app.app-folder,
+.show-apps,
+.grid-search-result,
+.overview-tile {
+  background-color: transparent;
+  border: none;
+  
+  @extend %icon_tile;
 
-    &:hover .overview-icon,
-    &:focus .overview-icon,
-    &:selected .overview-icon {
-      background-color: lighten($bg_color, 8%);
-      transition-duration: 0ms;
-      border-image: none;
-      background-image: none;
-    }
+  &:hover,
+  &:focus,
+  &:selected {
+    background-color: lighten($bg_color, 8%);
+    transition-duration: 0ms;
+    border-image: none;
+    background-image: none;
+  }
 
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      background-color: lighten($bg_color, 8%);
-      box-shadow: inset $depth2;
-      color: $fg_color;
-    }
+  &:focus { box-shadow: 0px 0px 2px 2px $selected_bg_color inset !important; }
 
+  &:active,
+  &:checked {
+    background-color:  lighten($bg_color, 8%);
+    box-shadow: inset $depth2;
+    color: $fg_color;
+  }
+
+}
+
+  // items on the dash
+  .dash-item-container {
+    .show-apps,
+    .overview-tile {
+      &, .overview-icon { @extend %icon_tile; }
+      &:hover .overview-icon,
+      &:focus .overview-icon,
+      &:selected .overview-icon,
+      &:active .overview-icon,
+      &:checked .overview-icon{
+        background-color: lighten($bg_color, 8%);
+      }
+    }
   }
 
   .app-well-app-running-dot, .app-grid-running-dot { //running apps indicator
@@ -1653,9 +1668,9 @@ $slider_size: 16px;
   }
 
   /* App Folders */
-.app-well-app.app-folder, .app-folder .overview-icon {
+.app-well-app.app-folder, .app-folder {
   background-color: lighten($bg_color, 5%);
-  border-radius: 12px;
+  border-radius: 18px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
